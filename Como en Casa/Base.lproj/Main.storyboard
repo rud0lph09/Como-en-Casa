@@ -16,9 +16,44 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UtC-L4-FsN">
+                                <rect key="frame" x="200" y="265" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Kdt-2D-728"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VED-kf-eeW">
+                                <rect key="frame" x="200" y="215" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="CrE-ee-udP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qvg-Bx-DNZ" customClass="FBSDKLoginButton">
+                                <rect key="frame" x="200" y="345" width="200" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="r2e-Us-Tov"/>
+                                    <constraint firstAttribute="width" constant="200" id="zmf-Pr-wBN"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="VED-kf-eeW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CbI-xB-6yj"/>
+                            <constraint firstItem="qvg-Bx-DNZ" firstAttribute="top" secondItem="UtC-L4-FsN" secondAttribute="bottom" constant="50" id="Cy1-E8-pgA"/>
+                            <constraint firstItem="VED-kf-eeW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-70" id="Pur-Lb-jwN"/>
+                            <constraint firstItem="UtC-L4-FsN" firstAttribute="top" secondItem="VED-kf-eeW" secondAttribute="bottom" constant="20" id="Ylh-CM-0a8"/>
+                            <constraint firstItem="UtC-L4-FsN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dJ2-2a-lUS"/>
+                            <constraint firstItem="qvg-Bx-DNZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jWM-ME-syc"/>
+                        </constraints>
                     </view>
                     <connections>
+                        <outlet property="btnFB" destination="qvg-Bx-DNZ" id="XsL-dY-mXX"/>
                         <segue destination="QeA-np-Gcx" kind="show" id="Hdg-mt-MVw"/>
                     </connections>
                 </viewController>

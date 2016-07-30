@@ -10,17 +10,21 @@ import UIKit
 import AVKit
 import AVFoundation
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
 
     var player: AVPlayer?
+    
+    @IBOutlet weak var btnFB: FBSDKLoginButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        configVideo()
+        btnFB.delegate = self
     }
     
     func configVideo(){
-        let videoURL: NSURL = NSBundle.mainBundle().URLForResource("video", withExtension: "mov")!
+        let videoURL: NSURL = NSBundle.mainBundle().URLForResource("video", withExtension: "mp4")!
         
         player = AVPlayer(URL: videoURL)
         player?.actionAtItemEnd = .None
@@ -47,10 +51,18 @@ class LoginViewController: UIViewController {
         player?.play()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func loginButtonDidLogOut(loginButton: FBSDKLoginButton!) {
+        
     }
+    
+    func loginButtonWillLogin(loginButton: FBSDKLoginButton!) -> Bool {
+        return true
+    }
+    
+    func loginButton(loginButton: FBSDKLoginButton!, didCompleteWithResult result: FBSDKLoginManagerLoginResult!, error: NSError!) {
+        
+    }
+    
 
 
 }
