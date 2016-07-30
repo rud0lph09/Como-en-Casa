@@ -1,0 +1,10 @@
+PODS:
+  - NAExpandableTableController (1.3.0)
+
+DEPENDENCIES:
+  - NAExpandableTableController
+
+SPEC CHECKSUMS:
+  NAExpandableTableController: 64ae049cfeb836a7d3b8a800f5c524abe28354f1
+
+COCOAPODS: 0.39.0

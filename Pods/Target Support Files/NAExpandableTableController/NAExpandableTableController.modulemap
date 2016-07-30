@@ -1,0 +1,6 @@
+framework module NAExpandableTableController {
+  umbrella header "NAExpandableTableController-umbrella.h"
+
+  export *
+  module * { export * }
+}
