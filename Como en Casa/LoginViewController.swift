@@ -21,6 +21,8 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
         // Do any additional setup after loading the view, typically from a nib.
         configVideo()
         btnFB.delegate = self
+        
+        FBSDKLoginManager().logOut()
     }
     
     func configVideo(){
