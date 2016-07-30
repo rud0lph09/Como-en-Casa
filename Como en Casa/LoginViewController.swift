@@ -24,7 +24,7 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
     }
     
     func configVideo(){
-        let videoURL: NSURL = NSBundle.mainBundle().URLForResource("video", withExtension: "mp4")!
+        let videoURL: NSURL = NSBundle.mainBundle().URLForResource("video", withExtension: "mov")!
         
         player = AVPlayer(URL: videoURL)
         player?.actionAtItemEnd = .None

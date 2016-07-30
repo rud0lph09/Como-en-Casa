@@ -11,6 +11,7 @@
 		ABA1A8EC1D4CAFF200C3C9E8 /* FacebookSDKStrings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = ABA1A8EB1D4CAFF200C3C9E8 /* FacebookSDKStrings.bundle */; };
 		ABA1A8EE1D4CAFFD00C3C9E8 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABA1A8ED1D4CAFFD00C3C9E8 /* FBSDKCoreKit.framework */; };
 		ABA1A8F01D4CB01000C3C9E8 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABA1A8EF1D4CB01000C3C9E8 /* FBSDKLoginKit.framework */; };
+		ABA1A8F71D4D2E6300C3C9E8 /* video.mov in Resources */ = {isa = PBXBuildFile; fileRef = ABA1A8F61D4D2E6300C3C9E8 /* video.mov */; };
 		DD9F22BD1D4C9107001DD2E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9F22BC1D4C9107001DD2E5 /* AppDelegate.swift */; };
 		DD9F22BF1D4C9107001DD2E5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9F22BE1D4C9107001DD2E5 /* LoginViewController.swift */; };
 		DD9F22C21D4C9107001DD2E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD9F22C01D4C9107001DD2E5 /* Main.storyboard */; };
@@ -47,6 +48,7 @@
 		ABA1A8ED1D4CAFFD00C3C9E8 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		ABA1A8EF1D4CB01000C3C9E8 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		ABA1A8F31D4CC82E00C3C9E8 /* Como en Casa-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Como en Casa-Bridging-Header.h"; sourceTree = "<group>"; };
+		ABA1A8F61D4D2E6300C3C9E8 /* video.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = video.mov; sourceTree = "<group>"; };
 		DD9F22B91D4C9107001DD2E5 /* Como en Casa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Como en Casa.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD9F22BC1D4C9107001DD2E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD9F22BE1D4C9107001DD2E5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 				DD9F22EF1D4C94F5001DD2E5 /* MapsController.swift */,
 				DD9F22F11D4C951F001DD2E5 /* TicketViewController.swift */,
 				DD9F22C61D4C9107001DD2E5 /* Assets.xcassets */,
+				ABA1A8F61D4D2E6300C3C9E8 /* video.mov */,
 				DD9F22C81D4C9107001DD2E5 /* LaunchScreen.storyboard */,
 				DD9F22CB1D4C9107001DD2E5 /* Info.plist */,
 				DD9F22C31D4C9107001DD2E5 /* Como_en_Casa.xcdatamodeld */,
@@ -261,6 +264,7 @@
 				DD9F22CA1D4C9107001DD2E5 /* LaunchScreen.storyboard in Resources */,
 				DD9F22C71D4C9107001DD2E5 /* Assets.xcassets in Resources */,
 				DD9F22C21D4C9107001DD2E5 /* Main.storyboard in Resources */,
+				ABA1A8F71D4D2E6300C3C9E8 /* video.mov in Resources */,
 				ABA1A8EC1D4CAFF200C3C9E8 /* FacebookSDKStrings.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
