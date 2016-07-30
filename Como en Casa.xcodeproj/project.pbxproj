@@ -20,6 +20,10 @@
 		DD9F22F21D4C951F001DD2E5 /* TicketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9F22F11D4C951F001DD2E5 /* TicketViewController.swift */; };
 		DD9F22F41D4CBA92001DD2E5 /* Saucer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9F22F31D4CBA92001DD2E5 /* Saucer.swift */; };
 		DD9F22F61D4CBF53001DD2E5 /* NetWorkFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9F22F51D4CBF53001DD2E5 /* NetWorkFunctions.swift */; };
+		DD9F22F81D4D074A001DD2E5 /* SimpleMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9F22F71D4D074A001DD2E5 /* SimpleMenuView.swift */; };
+		DD9F22FA1D4D0F4F001DD2E5 /* MyConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9F22F91D4D0F4F001DD2E5 /* MyConstants.swift */; };
+		DD9F22FC1D4D1106001DD2E5 /* MyNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9F22FB1D4D1106001DD2E5 /* MyNavController.swift */; };
+		DD9F22FE1D4D3068001DD2E5 /* FoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9F22FD1D4D3068001DD2E5 /* FoodView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +63,10 @@
 		DD9F22F11D4C951F001DD2E5 /* TicketViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketViewController.swift; sourceTree = "<group>"; };
 		DD9F22F31D4CBA92001DD2E5 /* Saucer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Saucer.swift; sourceTree = "<group>"; };
 		DD9F22F51D4CBF53001DD2E5 /* NetWorkFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetWorkFunctions.swift; sourceTree = "<group>"; };
+		DD9F22F71D4D074A001DD2E5 /* SimpleMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleMenuView.swift; sourceTree = "<group>"; };
+		DD9F22F91D4D0F4F001DD2E5 /* MyConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyConstants.swift; sourceTree = "<group>"; };
+		DD9F22FB1D4D1106001DD2E5 /* MyNavController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyNavController.swift; sourceTree = "<group>"; };
+		DD9F22FD1D4D3068001DD2E5 /* FoodView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +121,10 @@
 				DD9F22BE1D4C9107001DD2E5 /* LoginViewController.swift */,
 				DD9F22C01D4C9107001DD2E5 /* Main.storyboard */,
 				DD9F22ED1D4C94D1001DD2E5 /* FoodMenuController.swift */,
+				DD9F22F91D4D0F4F001DD2E5 /* MyConstants.swift */,
+				DD9F22FB1D4D1106001DD2E5 /* MyNavController.swift */,
+				DD9F22F71D4D074A001DD2E5 /* SimpleMenuView.swift */,
+				DD9F22FD1D4D3068001DD2E5 /* FoodView.swift */,
 				DD9F22F51D4CBF53001DD2E5 /* NetWorkFunctions.swift */,
 				DD9F22F31D4CBA92001DD2E5 /* Saucer.swift */,
 				DD9F22EF1D4C94F5001DD2E5 /* MapsController.swift */,
@@ -274,7 +286,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD9F22FE1D4D3068001DD2E5 /* FoodView.swift in Sources */,
+				DD9F22FC1D4D1106001DD2E5 /* MyNavController.swift in Sources */,
 				DD9F22EE1D4C94D1001DD2E5 /* FoodMenuController.swift in Sources */,
+				DD9F22FA1D4D0F4F001DD2E5 /* MyConstants.swift in Sources */,
 				DD9F22BF1D4C9107001DD2E5 /* LoginViewController.swift in Sources */,
 				DD9F22F21D4C951F001DD2E5 /* TicketViewController.swift in Sources */,
 				DD9F22C51D4C9107001DD2E5 /* Como_en_Casa.xcdatamodeld in Sources */,
@@ -282,6 +297,7 @@
 				DD9F22F41D4CBA92001DD2E5 /* Saucer.swift in Sources */,
 				DD9F22BD1D4C9107001DD2E5 /* AppDelegate.swift in Sources */,
 				DD9F22F01D4C94F5001DD2E5 /* MapsController.swift in Sources */,
+				DD9F22F81D4D074A001DD2E5 /* SimpleMenuView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
