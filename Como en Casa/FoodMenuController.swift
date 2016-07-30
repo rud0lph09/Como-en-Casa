@@ -19,12 +19,13 @@ class FoodMenuController: UIViewController {
     var DishesView: simpleMenuView!
     var DessertView: simpleMenuView!
     var DrinksView: simpleMenuView!
+    var abner = NSDictionary()
     var allDishViews: [simpleMenuView!] = []
     
     var navBar: navForMenu!
     
     //DATA STRUCTURES
-    var Soups: [Saucer] = [Saucer(name: "Gorditas", photoURL: "https://thefridaylunch.files.wordpress.com/2010/01/dscn4419.jpg", id: "5", price: "50", inStock: 10), Saucer(name: "Gorditas", photoURL: "http://www.quesadillasmari.com/wp-content/uploads/2012/01/Gordita-mari.jpg", id: "5", price: "50", inStock: 10), Saucer(name: "Gorditas", photoURL: "http://a-muse-of-food.com/wordpress/wp-content/uploads/2015/06/gorditas-with-beef-01.jpg", id: "5", price: "50", inStock: 10)]
+    var Soups: [Saucer] = []
     var Entries: [Saucer] = []
     var Dishes: [Saucer] = []
     var Desserts: [Saucer] = []
@@ -37,7 +38,13 @@ class FoodMenuController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        customInit()
+        getMenu()
+        
+        
+    }
+    
+    func setInfoInDict(info: NSDictionary){
+        self.abner = info
     }
     
     func customInit(){
@@ -92,14 +99,83 @@ class FoodMenuController: UIViewController {
 extension FoodMenuController{
     
     func plusItem(sender: AnyObject){
+        
         self.AllSaucers[navBar.navFlag][self.allDishViews[navBar.navFlag].itemFlag].desiredAmmount += 1
         self.allDishViews[navBar.navFlag].setImages()
         
     }
     
     func minusItem(sender: AnyObject){
-        self.AllSaucers[navBar.navFlag][self.allDishViews[navBar.navFlag].itemFlag].desiredAmmount -= 1
+        if self.AllSaucers[navBar.navFlag][self.allDishViews[navBar.navFlag].itemFlag].desiredAmmount > 0 {
+                self.AllSaucers[navBar.navFlag][self.allDishViews[navBar.navFlag].itemFlag].desiredAmmount -= 1
+        }
         self.allDishViews[navBar.navFlag].setImages()
+    }
+    
+    func getMenu(){
+        
+        
+        let myUrl = NSURL(string: "https://comoencasaapp.herokuapp.com/menu")
+        let request = NSMutableURLRequest(URL:myUrl!);
+        
+        
+        request.HTTPMethod = "GET"
+        
+        
+        let task = NSURLSession.sharedSession().dataTaskWithRequest(request) {
+            data, response, error in
+            
+            
+            if error != nil
+            {
+                print("error=\(error)")
+                return
+            }
+            
+            
+            let responseString = NSString(data: data!, encoding: NSUTF8StringEncoding)
+//            print("responseString = \(responseString)")
+            
+            
+            // Convert server json response to NSDictionary
+            do {
+                if let convertedJsonIntoDict = try NSJSONSerialization.JSONObjectWithData(data!, options: []) as? NSDictionary {
+                    
+                    // Print out dictionary
+                    
+                    for item in (convertedJsonIntoDict.valueForKey("dishes") as! [NSDictionary]) {
+                        let name: String = (item.valueForKey("name")!) as! String
+                        let photo: String = (item.valueForKey("photo")!) as! String
+                        let id: String = "\(item.valueForKey("id")!)"
+                        let price: String = "\(item.valueForKey("price")!)"
+
+
+                    
+                        self.Soups.append(Saucer(name: name, photoURL: photo, id: id, price: price, inStock: 10))
+                    }
+                    
+                    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), {
+                        dispatch_async(dispatch_get_main_queue(), {
+                            self.customInit()
+                        })
+                    })
+                    
+                    
+                    
+                    
+                    
+//                    print(((convertedJsonIntoDict.valueForKey("soups") as! [NSDictionary])[0]).valueForKey("name")!)
+                    // Get value by key
+                    
+                    
+                }
+            } catch let error as NSError {
+                print(error.localizedDescription)
+            }
+            
+            
+        }
+        task.resume()
     }
     
     
