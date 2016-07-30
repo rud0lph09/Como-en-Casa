@@ -60,7 +60,10 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
     }
     
     func loginButton(loginButton: FBSDKLoginButton!, didCompleteWithResult result: FBSDKLoginManagerLoginResult!, error: NSError!) {
-        
+        if (result.isCancelled == false && error == nil ){
+            let nv = self.storyboard?.instantiateViewControllerWithIdentifier("FoodMenuController")
+            self.presentViewController(nv!, animated: true, completion: nil)
+        }
     }
     
 

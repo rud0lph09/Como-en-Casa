@@ -138,7 +138,7 @@
         <!--Food Menu Controller-->
         <scene sceneID="hcU-i9-Ttk">
             <objects>
-                <viewController id="QeA-np-Gcx" customClass="FoodMenuController" customModule="Como_en_Casa" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FoodMenuController" id="QeA-np-Gcx" customClass="FoodMenuController" customModule="Como_en_Casa" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ql6-3k-jwP"/>
                         <viewControllerLayoutGuide type="bottom" id="rnP-eG-ZiF"/>
