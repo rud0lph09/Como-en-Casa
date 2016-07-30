@@ -1,0 +1,522 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DD9F22BD1D4C9107001DD2E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9F22BC1D4C9107001DD2E5 /* AppDelegate.swift */; };
+		DD9F22BF1D4C9107001DD2E5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9F22BE1D4C9107001DD2E5 /* ViewController.swift */; };
+		DD9F22C21D4C9107001DD2E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD9F22C01D4C9107001DD2E5 /* Main.storyboard */; };
+		DD9F22C51D4C9107001DD2E5 /* Como_en_Casa.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DD9F22C31D4C9107001DD2E5 /* Como_en_Casa.xcdatamodeld */; };
+		DD9F22C71D4C9107001DD2E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD9F22C61D4C9107001DD2E5 /* Assets.xcassets */; };
+		DD9F22CA1D4C9107001DD2E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD9F22C81D4C9107001DD2E5 /* LaunchScreen.storyboard */; };
+		DD9F22D51D4C9107001DD2E5 /* Como_en_CasaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9F22D41D4C9107001DD2E5 /* Como_en_CasaTests.swift */; };
+		DD9F22E01D4C9107001DD2E5 /* Como_en_CasaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9F22DF1D4C9107001DD2E5 /* Como_en_CasaUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DD9F22D11D4C9107001DD2E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD9F22B11D4C9107001DD2E5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD9F22B81D4C9107001DD2E5;
+			remoteInfo = "Como en Casa";
+		};
+		DD9F22DC1D4C9107001DD2E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD9F22B11D4C9107001DD2E5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD9F22B81D4C9107001DD2E5;
+			remoteInfo = "Como en Casa";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DD9F22B91D4C9107001DD2E5 /* Como en Casa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Como en Casa.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD9F22BC1D4C9107001DD2E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DD9F22BE1D4C9107001DD2E5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DD9F22C11D4C9107001DD2E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DD9F22C41D4C9107001DD2E5 /* Como_en_Casa.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Como_en_Casa.xcdatamodel; sourceTree = "<group>"; };
+		DD9F22C61D4C9107001DD2E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DD9F22C91D4C9107001DD2E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DD9F22CB1D4C9107001DD2E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD9F22D01D4C9107001DD2E5 /* Como en CasaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Como en CasaTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD9F22D41D4C9107001DD2E5 /* Como_en_CasaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Como_en_CasaTests.swift; sourceTree = "<group>"; };
+		DD9F22D61D4C9107001DD2E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD9F22DB1D4C9107001DD2E5 /* Como en CasaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Como en CasaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD9F22DF1D4C9107001DD2E5 /* Como_en_CasaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Como_en_CasaUITests.swift; sourceTree = "<group>"; };
+		DD9F22E11D4C9107001DD2E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DD9F22B61D4C9107001DD2E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD9F22CD1D4C9107001DD2E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD9F22D81D4C9107001DD2E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DD9F22B01D4C9107001DD2E5 = {
+			isa = PBXGroup;
+			children = (
+				DD9F22BB1D4C9107001DD2E5 /* Como en Casa */,
+				DD9F22D31D4C9107001DD2E5 /* Como en CasaTests */,
+				DD9F22DE1D4C9107001DD2E5 /* Como en CasaUITests */,
+				DD9F22BA1D4C9107001DD2E5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DD9F22BA1D4C9107001DD2E5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DD9F22B91D4C9107001DD2E5 /* Como en Casa.app */,
+				DD9F22D01D4C9107001DD2E5 /* Como en CasaTests.xctest */,
+				DD9F22DB1D4C9107001DD2E5 /* Como en CasaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DD9F22BB1D4C9107001DD2E5 /* Como en Casa */ = {
+			isa = PBXGroup;
+			children = (
+				DD9F22BC1D4C9107001DD2E5 /* AppDelegate.swift */,
+				DD9F22BE1D4C9107001DD2E5 /* ViewController.swift */,
+				DD9F22C01D4C9107001DD2E5 /* Main.storyboard */,
+				DD9F22C61D4C9107001DD2E5 /* Assets.xcassets */,
+				DD9F22C81D4C9107001DD2E5 /* LaunchScreen.storyboard */,
+				DD9F22CB1D4C9107001DD2E5 /* Info.plist */,
+				DD9F22C31D4C9107001DD2E5 /* Como_en_Casa.xcdatamodeld */,
+			);
+			path = "Como en Casa";
+			sourceTree = "<group>";
+		};
+		DD9F22D31D4C9107001DD2E5 /* Como en CasaTests */ = {
+			isa = PBXGroup;
+			children = (
+				DD9F22D41D4C9107001DD2E5 /* Como_en_CasaTests.swift */,
+				DD9F22D61D4C9107001DD2E5 /* Info.plist */,
+			);
+			path = "Como en CasaTests";
+			sourceTree = "<group>";
+		};
+		DD9F22DE1D4C9107001DD2E5 /* Como en CasaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DD9F22DF1D4C9107001DD2E5 /* Como_en_CasaUITests.swift */,
+				DD9F22E11D4C9107001DD2E5 /* Info.plist */,
+			);
+			path = "Como en CasaUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DD9F22B81D4C9107001DD2E5 /* Como en Casa */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD9F22E41D4C9107001DD2E5 /* Build configuration list for PBXNativeTarget "Como en Casa" */;
+			buildPhases = (
+				DD9F22B51D4C9107001DD2E5 /* Sources */,
+				DD9F22B61D4C9107001DD2E5 /* Frameworks */,
+				DD9F22B71D4C9107001DD2E5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Como en Casa";
+			productName = "Como en Casa";
+			productReference = DD9F22B91D4C9107001DD2E5 /* Como en Casa.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DD9F22CF1D4C9107001DD2E5 /* Como en CasaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD9F22E71D4C9107001DD2E5 /* Build configuration list for PBXNativeTarget "Como en CasaTests" */;
+			buildPhases = (
+				DD9F22CC1D4C9107001DD2E5 /* Sources */,
+				DD9F22CD1D4C9107001DD2E5 /* Frameworks */,
+				DD9F22CE1D4C9107001DD2E5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD9F22D21D4C9107001DD2E5 /* PBXTargetDependency */,
+			);
+			name = "Como en CasaTests";
+			productName = "Como en CasaTests";
+			productReference = DD9F22D01D4C9107001DD2E5 /* Como en CasaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DD9F22DA1D4C9107001DD2E5 /* Como en CasaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD9F22EA1D4C9107001DD2E5 /* Build configuration list for PBXNativeTarget "Como en CasaUITests" */;
+			buildPhases = (
+				DD9F22D71D4C9107001DD2E5 /* Sources */,
+				DD9F22D81D4C9107001DD2E5 /* Frameworks */,
+				DD9F22D91D4C9107001DD2E5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD9F22DD1D4C9107001DD2E5 /* PBXTargetDependency */,
+			);
+			name = "Como en CasaUITests";
+			productName = "Como en CasaUITests";
+			productReference = DD9F22DB1D4C9107001DD2E5 /* Como en CasaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DD9F22B11D4C9107001DD2E5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Rodolfo Castillo";
+				TargetAttributes = {
+					DD9F22B81D4C9107001DD2E5 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					DD9F22CF1D4C9107001DD2E5 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = DD9F22B81D4C9107001DD2E5;
+					};
+					DD9F22DA1D4C9107001DD2E5 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = DD9F22B81D4C9107001DD2E5;
+					};
+				};
+			};
+			buildConfigurationList = DD9F22B41D4C9107001DD2E5 /* Build configuration list for PBXProject "Como en Casa" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DD9F22B01D4C9107001DD2E5;
+			productRefGroup = DD9F22BA1D4C9107001DD2E5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DD9F22B81D4C9107001DD2E5 /* Como en Casa */,
+				DD9F22CF1D4C9107001DD2E5 /* Como en CasaTests */,
+				DD9F22DA1D4C9107001DD2E5 /* Como en CasaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DD9F22B71D4C9107001DD2E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD9F22CA1D4C9107001DD2E5 /* LaunchScreen.storyboard in Resources */,
+				DD9F22C71D4C9107001DD2E5 /* Assets.xcassets in Resources */,
+				DD9F22C21D4C9107001DD2E5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD9F22CE1D4C9107001DD2E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD9F22D91D4C9107001DD2E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DD9F22B51D4C9107001DD2E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD9F22BF1D4C9107001DD2E5 /* ViewController.swift in Sources */,
+				DD9F22C51D4C9107001DD2E5 /* Como_en_Casa.xcdatamodeld in Sources */,
+				DD9F22BD1D4C9107001DD2E5 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD9F22CC1D4C9107001DD2E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD9F22D51D4C9107001DD2E5 /* Como_en_CasaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD9F22D71D4C9107001DD2E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD9F22E01D4C9107001DD2E5 /* Como_en_CasaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DD9F22D21D4C9107001DD2E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD9F22B81D4C9107001DD2E5 /* Como en Casa */;
+			targetProxy = DD9F22D11D4C9107001DD2E5 /* PBXContainerItemProxy */;
+		};
+		DD9F22DD1D4C9107001DD2E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD9F22B81D4C9107001DD2E5 /* Como en Casa */;
+			targetProxy = DD9F22DC1D4C9107001DD2E5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DD9F22C01D4C9107001DD2E5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD9F22C11D4C9107001DD2E5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DD9F22C81D4C9107001DD2E5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD9F22C91D4C9107001DD2E5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DD9F22E21D4C9107001DD2E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DD9F22E31D4C9107001DD2E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DD9F22E51D4C9107001DD2E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Como en Casa/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.mariachi.Como-en-Casa";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DD9F22E61D4C9107001DD2E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Como en Casa/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.mariachi.Como-en-Casa";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DD9F22E81D4C9107001DD2E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Como en CasaTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.mariachi.Como-en-CasaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Como en Casa.app/Como en Casa";
+			};
+			name = Debug;
+		};
+		DD9F22E91D4C9107001DD2E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Como en CasaTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.mariachi.Como-en-CasaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Como en Casa.app/Como en Casa";
+			};
+			name = Release;
+		};
+		DD9F22EB1D4C9107001DD2E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Como en CasaUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.mariachi.Como-en-CasaUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Como en Casa";
+			};
+			name = Debug;
+		};
+		DD9F22EC1D4C9107001DD2E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Como en CasaUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.mariachi.Como-en-CasaUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Como en Casa";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DD9F22B41D4C9107001DD2E5 /* Build configuration list for PBXProject "Como en Casa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD9F22E21D4C9107001DD2E5 /* Debug */,
+				DD9F22E31D4C9107001DD2E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD9F22E41D4C9107001DD2E5 /* Build configuration list for PBXNativeTarget "Como en Casa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD9F22E51D4C9107001DD2E5 /* Debug */,
+				DD9F22E61D4C9107001DD2E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DD9F22E71D4C9107001DD2E5 /* Build configuration list for PBXNativeTarget "Como en CasaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD9F22E81D4C9107001DD2E5 /* Debug */,
+				DD9F22E91D4C9107001DD2E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DD9F22EA1D4C9107001DD2E5 /* Build configuration list for PBXNativeTarget "Como en CasaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD9F22EB1D4C9107001DD2E5 /* Debug */,
+				DD9F22EC1D4C9107001DD2E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DD9F22C31D4C9107001DD2E5 /* Como_en_Casa.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DD9F22C41D4C9107001DD2E5 /* Como_en_Casa.xcdatamodel */,
+			);
+			currentVersion = DD9F22C41D4C9107001DD2E5 /* Como_en_Casa.xcdatamodel */;
+			path = Como_en_Casa.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = DD9F22B11D4C9107001DD2E5 /* Project object */;
+}
