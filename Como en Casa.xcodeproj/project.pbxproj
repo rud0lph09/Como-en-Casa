@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB992E221D4D434B00A4B8E7 /* ExpandingCollection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB992E211D4D433B00A4B8E7 /* ExpandingCollection.framework */; };
+		AB992E241D4D464B00A4B8E7 /* TicketBorderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB992E231D4D464B00A4B8E7 /* TicketBorderCell.swift */; };
+		AB992E261D4D46F200A4B8E7 /* TicketSectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB992E251D4D46F200A4B8E7 /* TicketSectionCell.swift */; };
+		AB992E281D4D470D00A4B8E7 /* TicketDescriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB992E271D4D470D00A4B8E7 /* TicketDescriptionCell.swift */; };
+		AB992E2A1D4D47CA00A4B8E7 /* TicketTotalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB992E291D4D47CA00A4B8E7 /* TicketTotalCell.swift */; };
 		DD9F22BD1D4C9107001DD2E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9F22BC1D4C9107001DD2E5 /* AppDelegate.swift */; };
 		DD9F22BF1D4C9107001DD2E5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9F22BE1D4C9107001DD2E5 /* LoginViewController.swift */; };
 		DD9F22C21D4C9107001DD2E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD9F22C01D4C9107001DD2E5 /* Main.storyboard */; };
@@ -21,6 +26,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		AB992E1C1D4D433B00A4B8E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB992E161D4D433A00A4B8E7 /* DemoExpandingCollection.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 848596281CF585F3000BCC74;
+			remoteInfo = DemoExpandingCollection;
+		};
+		AB992E1E1D4D433B00A4B8E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB992E161D4D433A00A4B8E7 /* DemoExpandingCollection.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8485963C1CF585F3000BCC74;
+			remoteInfo = DemoExpandingCollectionTests;
+		};
+		AB992E201D4D433B00A4B8E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB992E161D4D433A00A4B8E7 /* DemoExpandingCollection.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8499D8141D001B82004B5B37;
+			remoteInfo = ExpandingCollection;
+		};
 		DD9F22D11D4C9107001DD2E5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DD9F22B11D4C9107001DD2E5 /* Project object */;
@@ -38,6 +64,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AB992E161D4D433A00A4B8E7 /* DemoExpandingCollection.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DemoExpandingCollection.xcodeproj; path = "expanding-collection-master/DemoExpandingCollection/DemoExpandingCollection.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		AB992E231D4D464B00A4B8E7 /* TicketBorderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketBorderCell.swift; sourceTree = "<group>"; };
+		AB992E251D4D46F200A4B8E7 /* TicketSectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketSectionCell.swift; sourceTree = "<group>"; };
+		AB992E271D4D470D00A4B8E7 /* TicketDescriptionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketDescriptionCell.swift; sourceTree = "<group>"; };
+		AB992E291D4D47CA00A4B8E7 /* TicketTotalCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketTotalCell.swift; sourceTree = "<group>"; };
 		DD9F22B91D4C9107001DD2E5 /* Como en Casa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Como en Casa.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD9F22BC1D4C9107001DD2E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD9F22BE1D4C9107001DD2E5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB992E221D4D434B00A4B8E7 /* ExpandingCollection.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +114,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AB992E171D4D433A00A4B8E7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AB992E1D1D4D433B00A4B8E7 /* DemoExpandingCollection.app */,
+				AB992E1F1D4D433B00A4B8E7 /* DemoExpandingCollectionTests.xctest */,
+				AB992E211D4D433B00A4B8E7 /* ExpandingCollection.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AB992E2B1D4D47E200A4B8E7 /* TicketCells */ = {
+			isa = PBXGroup;
+			children = (
+				AB992E231D4D464B00A4B8E7 /* TicketBorderCell.swift */,
+				AB992E251D4D46F200A4B8E7 /* TicketSectionCell.swift */,
+				AB992E271D4D470D00A4B8E7 /* TicketDescriptionCell.swift */,
+				AB992E291D4D47CA00A4B8E7 /* TicketTotalCell.swift */,
+			);
+			name = TicketCells;
+			sourceTree = "<group>";
+		};
 		DD9F22B01D4C9107001DD2E5 = {
 			isa = PBXGroup;
 			children = (
@@ -111,10 +164,12 @@
 				DD9F22ED1D4C94D1001DD2E5 /* FoodMenuController.swift */,
 				DD9F22EF1D4C94F5001DD2E5 /* MapsController.swift */,
 				DD9F22F11D4C951F001DD2E5 /* TicketViewController.swift */,
+				AB992E2B1D4D47E200A4B8E7 /* TicketCells */,
 				DD9F22C61D4C9107001DD2E5 /* Assets.xcassets */,
 				DD9F22C81D4C9107001DD2E5 /* LaunchScreen.storyboard */,
 				DD9F22CB1D4C9107001DD2E5 /* Info.plist */,
 				DD9F22C31D4C9107001DD2E5 /* Como_en_Casa.xcdatamodeld */,
+				AB992E161D4D433A00A4B8E7 /* DemoExpandingCollection.xcodeproj */,
 			);
 			path = "Como en Casa";
 			sourceTree = "<group>";
@@ -227,6 +282,12 @@
 			mainGroup = DD9F22B01D4C9107001DD2E5;
 			productRefGroup = DD9F22BA1D4C9107001DD2E5 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = AB992E171D4D433A00A4B8E7 /* Products */;
+					ProjectRef = AB992E161D4D433A00A4B8E7 /* DemoExpandingCollection.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				DD9F22B81D4C9107001DD2E5 /* Como en Casa */,
@@ -235,6 +296,30 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		AB992E1D1D4D433B00A4B8E7 /* DemoExpandingCollection.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = DemoExpandingCollection.app;
+			remoteRef = AB992E1C1D4D433B00A4B8E7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AB992E1F1D4D433B00A4B8E7 /* DemoExpandingCollectionTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = DemoExpandingCollectionTests.xctest;
+			remoteRef = AB992E1E1D4D433B00A4B8E7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AB992E211D4D433B00A4B8E7 /* ExpandingCollection.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ExpandingCollection.framework;
+			remoteRef = AB992E201D4D433B00A4B8E7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		DD9F22B71D4C9107001DD2E5 /* Resources */ = {
@@ -271,9 +356,13 @@
 				DD9F22EE1D4C94D1001DD2E5 /* FoodMenuController.swift in Sources */,
 				DD9F22BF1D4C9107001DD2E5 /* LoginViewController.swift in Sources */,
 				DD9F22F21D4C951F001DD2E5 /* TicketViewController.swift in Sources */,
+				AB992E261D4D46F200A4B8E7 /* TicketSectionCell.swift in Sources */,
 				DD9F22C51D4C9107001DD2E5 /* Como_en_Casa.xcdatamodeld in Sources */,
 				DD9F22BD1D4C9107001DD2E5 /* AppDelegate.swift in Sources */,
 				DD9F22F01D4C94F5001DD2E5 /* MapsController.swift in Sources */,
+				AB992E281D4D470D00A4B8E7 /* TicketDescriptionCell.swift in Sources */,
+				AB992E2A1D4D47CA00A4B8E7 /* TicketTotalCell.swift in Sources */,
+				AB992E241D4D464B00A4B8E7 /* TicketBorderCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,6 +587,7 @@
 				DD9F22E61D4C9107001DD2E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DD9F22E71D4C9107001DD2E5 /* Build configuration list for PBXNativeTarget "Como en CasaTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +596,7 @@
 				DD9F22E91D4C9107001DD2E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DD9F22EA1D4C9107001DD2E5 /* Build configuration list for PBXNativeTarget "Como en CasaUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +605,7 @@
 				DD9F22EC1D4C9107001DD2E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

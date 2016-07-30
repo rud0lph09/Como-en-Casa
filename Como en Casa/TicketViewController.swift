@@ -10,4 +10,13 @@ import UIKit
 
 class TicketViewController: UIViewController {
     
+    @IBOutlet weak var tb: UITableView!
+    
+    
+    
+    
+    
+    
+    
+    
 }
