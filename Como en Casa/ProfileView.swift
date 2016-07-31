@@ -3,6 +3,7 @@ class ProfileViewController: UIViewController {
     
     var userInfoInputView: personalInfoViewInputs!
     
+    @IBOutlet weak var logoutButton: UIButton!
     var OKbutton: UIButton!
     
     override func viewDidLoad() {
@@ -30,11 +31,15 @@ class ProfileViewController: UIViewController {
         //ADDING STUFF TO VIEW
         self.view.addSubview(userInfoInputView)
         self.view.addSubview(OKbutton)
+        
+        self.view.bringSubviewToFront(logoutButton)
     }
     
     func getBack(sender: AnyObject){
         self.performSegueWithIdentifier("return", sender: nil)
     }
+
+    
     
 }
 
