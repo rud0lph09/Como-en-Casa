@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="dSr-du-s5u">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -17,9 +17,78 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qyj-8I-rBt">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                            </view>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VED-kf-eeW" customClass="CustomTextField" customModule="Como_en_Casa" customModuleProvider="target">
+                                <rect key="frame" x="80" y="270" width="440" height="40"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="0.097185283687943269" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="txM-x6-gzX"/>
+                                </constraints>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="placeHolder" value="Contraseña"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="0.84990026595744683" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UtC-L4-FsN" customClass="CustomTextField" customModule="Como_en_Casa" customModuleProvider="target">
+                                <rect key="frame" x="80" y="210" width="440" height="40"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.10707557624113476" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="PIl-dH-3qa"/>
+                                </constraints>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="placeHolder" value="Usuario"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="0.84990026595744683" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qvg-Bx-DNZ" customClass="FBSDKLoginButton">
+                                <rect key="frame" x="200" y="360" width="200" height="40"/>
+                                <color key="backgroundColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="0.17772052304964539" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="r2e-Us-Tov"/>
+                                    <constraint firstAttribute="width" constant="200" id="zmf-Pr-wBN"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="UtC-L4-FsN" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-70" id="0VB-0y-r1k"/>
+                            <constraint firstItem="qyj-8I-rBt" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="8Ne-s3-5Sl"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="UtC-L4-FsN" secondAttribute="trailing" constant="60" id="8uP-KP-ZhS"/>
+                            <constraint firstItem="VED-kf-eeW" firstAttribute="top" secondItem="UtC-L4-FsN" secondAttribute="bottom" constant="20" id="Klz-Sv-2wN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="VED-kf-eeW" secondAttribute="trailing" constant="60" id="Llj-cX-IlL"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="qyj-8I-rBt" secondAttribute="bottom" id="Saz-ih-SaT"/>
+                            <constraint firstItem="VED-kf-eeW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="60" id="UFw-ZL-GQG"/>
+                            <constraint firstItem="qvg-Bx-DNZ" firstAttribute="top" secondItem="VED-kf-eeW" secondAttribute="bottom" constant="50" id="aWU-da-yPi"/>
+                            <constraint firstAttribute="trailing" secondItem="qyj-8I-rBt" secondAttribute="trailing" id="cBM-BB-QHu"/>
+                            <constraint firstItem="UtC-L4-FsN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dJ2-2a-lUS"/>
+                            <constraint firstItem="qyj-8I-rBt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="dme-aq-41l"/>
+                            <constraint firstItem="qvg-Bx-DNZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jWM-ME-syc"/>
+                            <constraint firstItem="VED-kf-eeW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ytY-VQ-2Cn"/>
+                            <constraint firstItem="UtC-L4-FsN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="60" id="z53-tB-yPB"/>
+                        </constraints>
                     </view>
                     <connections>
+                        <outlet property="btnFB" destination="qvg-Bx-DNZ" id="XsL-dY-mXX"/>
                         <segue destination="QeA-np-Gcx" kind="show" id="Hdg-mt-MVw"/>
                     </connections>
                 </viewController>
@@ -310,7 +379,7 @@
         <!--Food Menu Controller-->
         <scene sceneID="hcU-i9-Ttk">
             <objects>
-                <viewController id="QeA-np-Gcx" customClass="FoodMenuController" customModule="Como_en_Casa" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FoodMenuController" id="QeA-np-Gcx" customClass="FoodMenuController" customModule="Como_en_Casa" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ql6-3k-jwP"/>
                         <viewControllerLayoutGuide type="bottom" id="rnP-eG-ZiF"/>
