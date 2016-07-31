@@ -16,6 +16,7 @@
 		ABE360621D4DE77500CC85E9 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABE360611D4DE77500CC85E9 /* FBSDKCoreKit.framework */; };
 		ABE360641D4DE77A00CC85E9 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABE360631D4DE77A00CC85E9 /* FBSDKLoginKit.framework */; };
 		ABE360691D4DE7C900CC85E9 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABE360681D4DE7C900CC85E9 /* Bolts.framework */; };
+		ABE3606B1D4DE87300CC85E9 /* video.mov in Resources */ = {isa = PBXBuildFile; fileRef = ABE3606A1D4DE87300CC85E9 /* video.mov */; };
 		DD9F22BD1D4C9107001DD2E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9F22BC1D4C9107001DD2E5 /* AppDelegate.swift */; };
 		DD9F22BF1D4C9107001DD2E5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9F22BE1D4C9107001DD2E5 /* LoginViewController.swift */; };
 		DD9F22C21D4C9107001DD2E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD9F22C01D4C9107001DD2E5 /* Main.storyboard */; };
@@ -57,6 +58,7 @@
 		ABE360631D4DE77A00CC85E9 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		ABE360651D4DE7AD00CC85E9 /* Como en Casa-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Como en Casa-Bridging-Header.h"; sourceTree = "<group>"; };
 		ABE360681D4DE7C900CC85E9 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		ABE3606A1D4DE87300CC85E9 /* video.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = video.mov; sourceTree = "<group>"; };
 		C73FF35FF5B41DAB4B322FD8 /* Pods_Como_en_Casa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Como_en_Casa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB59003FA3AAC64D4C1EFF5A /* Pods-Como en Casa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Como en Casa.release.xcconfig"; path = "Pods/Target Support Files/Pods-Como en Casa/Pods-Como en Casa.release.xcconfig"; sourceTree = "<group>"; };
 		DD9F22B91D4C9107001DD2E5 /* Como en Casa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Como en Casa.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -176,6 +178,7 @@
 				DD9F22CB1D4C9107001DD2E5 /* Info.plist */,
 				DD9F22C31D4C9107001DD2E5 /* Como_en_Casa.xcdatamodeld */,
 				ABE360651D4DE7AD00CC85E9 /* Como en Casa-Bridging-Header.h */,
+				ABE3606A1D4DE87300CC85E9 /* video.mov */,
 			);
 			path = "Como en Casa";
 			sourceTree = "<group>";
@@ -308,6 +311,7 @@
 				DD9F22CA1D4C9107001DD2E5 /* LaunchScreen.storyboard in Resources */,
 				DD9F22C71D4C9107001DD2E5 /* Assets.xcassets in Resources */,
 				DD9F22C21D4C9107001DD2E5 /* Main.storyboard in Resources */,
+				ABE3606B1D4DE87300CC85E9 /* video.mov in Resources */,
 				ABE360601D4DE76B00CC85E9 /* FacebookSDKStrings.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
