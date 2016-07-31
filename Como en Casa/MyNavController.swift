@@ -174,7 +174,7 @@ class navForMenu: UIView {
             self.standardArrangmentOfItems()
             }
         } else if navFlag == 0 {
-            
+            self.parent.performSegueWithIdentifier("profile", sender: nil)
         }
     }
     

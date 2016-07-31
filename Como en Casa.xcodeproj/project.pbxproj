@@ -36,6 +36,7 @@
 		DD9F22FA1D4D0F4F001DD2E5 /* MyConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9F22F91D4D0F4F001DD2E5 /* MyConstants.swift */; };
 		DD9F22FC1D4D1106001DD2E5 /* MyNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9F22FB1D4D1106001DD2E5 /* MyNavController.swift */; };
 		DD9F22FE1D4D3068001DD2E5 /* FoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9F22FD1D4D3068001DD2E5 /* FoodView.swift */; };
+		DDC9C8491D4E0A52000B4EC1 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC9C8481D4E0A52000B4EC1 /* ProfileView.swift */; };
 		E93C822E1F1B82B45BB74F66 /* Pods_Como_en_Casa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5A99CE8A9F198D34759D00C /* Pods_Como_en_Casa.framework */; };
 /* End PBXBuildFile section */
 
@@ -99,6 +100,7 @@
 		DD9F22F91D4D0F4F001DD2E5 /* MyConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyConstants.swift; sourceTree = "<group>"; };
 		DD9F22FB1D4D1106001DD2E5 /* MyNavController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyNavController.swift; sourceTree = "<group>"; };
 		DD9F22FD1D4D3068001DD2E5 /* FoodView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodView.swift; sourceTree = "<group>"; };
+		DDC9C8481D4E0A52000B4EC1 /* ProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		DF96F2D31CCA366C1A39AE7D /* Pods_Como_en_CasaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Como_en_CasaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -186,6 +188,7 @@
 				DD9F22BC1D4C9107001DD2E5 /* AppDelegate.swift */,
 				DD9F22BE1D4C9107001DD2E5 /* LoginViewController.swift */,
 				DD9F22FB1D4D1106001DD2E5 /* MyNavController.swift */,
+				DDC9C8481D4E0A52000B4EC1 /* ProfileView.swift */,
 				DD9F22C01D4C9107001DD2E5 /* Main.storyboard */,
 				DD9F23011D4DC7A2001DD2E5 /* FoodMenu */,
 				DD9F22F51D4CBF53001DD2E5 /* NetWorkFunctions.swift */,
@@ -520,6 +523,7 @@
 				AB992E261D4D46F200A4B8E7 /* TicketSectionCell.swift in Sources */,
 				DD9F22C51D4C9107001DD2E5 /* Como_en_Casa.xcdatamodeld in Sources */,
 				DD9F22F61D4CBF53001DD2E5 /* NetWorkFunctions.swift in Sources */,
+				DDC9C8491D4E0A52000B4EC1 /* ProfileView.swift in Sources */,
 				DD9F22F41D4CBA92001DD2E5 /* Saucer.swift in Sources */,
 				DD9F22BD1D4C9107001DD2E5 /* AppDelegate.swift in Sources */,
 				DD9F22F01D4C94F5001DD2E5 /* MapsController.swift in Sources */,

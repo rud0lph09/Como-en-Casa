@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -384,6 +385,64 @@
             </objects>
             <point key="canvasLocation" x="2197" y="368"/>
         </scene>
+        <!--Profile View Controller-->
+        <scene sceneID="zla-Vm-ewc">
+            <objects>
+                <viewController id="qbo-5n-pOX" customClass="ProfileViewController" customModule="Como_en_Casa" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PVX-Gl-bsw"/>
+                        <viewControllerLayoutGuide type="bottom" id="ieN-JB-Dtg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="44a-k7-y5j">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ddW-fI-7yd">
+                                <rect key="frame" x="200" y="502" width="200" height="40"/>
+                                <color key="backgroundColor" red="1" green="0.20000000000000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ddW-fI-7yd" secondAttribute="height" multiplier="5:1" id="Rlo-bh-t5X"/>
+                                    <constraint firstAttribute="width" constant="200" id="XFT-en-2Nd"/>
+                                </constraints>
+                                <state key="normal" title="Cerrar Sesion">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="enter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zLb-H1-OPo"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="Zak-aq-qtC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f8A-0y-fTv">
+                                <rect key="frame" x="200" y="447" width="200" height="40"/>
+                                <color key="backgroundColor" red="0.0" green="0.80000000000000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="4k4-D9-545"/>
+                                    <constraint firstAttribute="width" secondItem="f8A-0y-fTv" secondAttribute="height" multiplier="5:1" id="zta-xx-rN9"/>
+                                </constraints>
+                                <state key="normal" title="Registrar Método de Pago">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="enter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Y9L-sk-lti"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="f8A-0y-fTv" firstAttribute="centerX" secondItem="44a-k7-y5j" secondAttribute="centerX" id="9DR-kF-aDb"/>
+                            <constraint firstItem="ddW-fI-7yd" firstAttribute="top" secondItem="f8A-0y-fTv" secondAttribute="bottom" constant="15" id="cWE-VH-0bW"/>
+                            <constraint firstItem="ieN-JB-Dtg" firstAttribute="top" secondItem="ddW-fI-7yd" secondAttribute="bottom" constant="58" id="rxU-DL-sMJ"/>
+                            <constraint firstItem="ddW-fI-7yd" firstAttribute="centerX" secondItem="44a-k7-y5j" secondAttribute="centerX" id="v9v-Te-EdJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="QeA-np-Gcx" kind="show" identifier="return" id="CtK-em-eIP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Bf-SQ-hwL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="837" y="-454"/>
+        </scene>
         <!--Maps Controller-->
         <scene sceneID="5jd-IO-XHb">
             <objects>
@@ -420,6 +479,7 @@
                     </view>
                     <connections>
                         <segue destination="AwK-kJ-Zcg" kind="presentation" identifier="mapConfirm" modalPresentationStyle="formSheet" id="M5N-03-waJ"/>
+                        <segue destination="qbo-5n-pOX" kind="show" identifier="profile" id="2Qp-bF-zqt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bey-Yg-dZc" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -433,6 +493,6 @@
         <image name="tarjataIcon" width="48" height="48"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="rIf-le-I1L"/>
+        <segue reference="CtK-em-eIP"/>
     </inferredMetricsTieBreakers>
 </document>
