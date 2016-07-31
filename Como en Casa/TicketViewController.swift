@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import NAExpandableTableControllerorder.append(["soup_id": n.id, "soup_amount": "\(n.desiredAmmount)"])
+import NAExpandableTableController
 
 enum foodSectionState {
     case Postre,Comida;
@@ -51,9 +51,7 @@ class TicketViewController: UIViewController, NAExpandableTableViewDelegate, NAE
         let cell = tb.dequeueReusableCellWithIdentifier("TicketDescriptionCell") as! TicketDescriptionCell
         
         if food == .Comida {
-            cell.setCell(2, description: comidaDescription[indexPath.row], price: 30)
         }else if food == .Postre{
-            cell.setCell(1, description: postreDescription[indexPath.row], price: 30)
         }
         print(indexPath.row)
         return cell

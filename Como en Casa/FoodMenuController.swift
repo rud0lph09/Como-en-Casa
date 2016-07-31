@@ -22,6 +22,8 @@ class FoodMenuController: UIViewController {
     var abner = NSDictionary()
     var allDishViews: [simpleMenuView!] = []
     
+    var circle: UILabel!
+    
     var navBar: navForMenu!
     
     //DATA STRUCTURES
@@ -40,9 +42,28 @@ class FoodMenuController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.circle = UILabel(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
+        self.circle.clipsToBounds = true
+        self.circle.layer.cornerRadius = 50
+        self.circle.backgroundColor = UIColor.whiteColor()
+        self.circle.center = self.view.center
+        self.view.addSubview(circle)
+        self.animationForLoadingScreen()
+        self.view.backgroundColor = FancyOrange
         getMenu()
         
         
+    }
+    
+    func animationForLoadingScreen(){
+        UIView.animateWithDuration(0.3, animations: {
+            self.circle.transform = CGAffineTransformMakeScale(0.1, 0.1)
+        })
+        UIView.animateWithDuration(0.4, delay: 0.31, options: [], animations: {
+            self.circle.transform = CGAffineTransformIdentity
+            }) { (finished) in
+                self.animationForLoadingScreen()
+        }
     }
     
     func setInfoInDict(info: NSDictionary){
@@ -50,6 +71,8 @@ class FoodMenuController: UIViewController {
     }
     
     func customInit(){
+        
+        
         
         self.plusButton = UIButton(type: .System)
         self.minusButton = UIButton(type: .System)
