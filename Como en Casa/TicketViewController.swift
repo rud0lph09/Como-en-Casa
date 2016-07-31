@@ -8,6 +8,7 @@
 
 import UIKit
 import NAExpandableTableController
+
 import Alamofire
 import SwiftyJSON
 
@@ -77,8 +78,8 @@ class TicketViewController: UIViewController, NAExpandableTableViewDelegate, NAE
             cell.setCell(1, description: "Sopa Papa, Mole.", price: 30)
         }else{
             cell.setCell(1, description: "Arroz, Milanesa.", price: 30)
+
         }
-        
         return cell
     }
     
@@ -118,7 +119,7 @@ class TicketViewController: UIViewController, NAExpandableTableViewDelegate, NAE
     func expandableTableView(tableView: UITableView, isExpandableSection section: Int) -> Bool {
         return true
     }
-    
+        
     func expandableTableView(tableView: UITableView, didSelectTitleCellInSection section: Int) {
         if section == 2 {
             food = .Comida

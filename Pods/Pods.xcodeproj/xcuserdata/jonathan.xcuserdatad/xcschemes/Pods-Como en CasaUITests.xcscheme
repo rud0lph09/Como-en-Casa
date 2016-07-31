@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0700"
+   LastUpgradeVersion = "0730"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3D535D42F6DFEB07762D326D3D2B2614"
-               BuildableName = "Pods_Como_en_CasaTests.framework"
-               BlueprintName = "Pods-Como en CasaTests"
+               BlueprintIdentifier = "6B18753F4E916C6297C7E0F43B003070"
+               BuildableName = "Pods_Como_en_CasaUITests.framework"
+               BlueprintName = "Pods-Como en CasaUITests"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3D535D42F6DFEB07762D326D3D2B2614"
-            BuildableName = "Pods_Como_en_CasaTests.framework"
-            BlueprintName = "Pods-Como en CasaTests"
+            BlueprintIdentifier = "6B18753F4E916C6297C7E0F43B003070"
+            BuildableName = "Pods_Como_en_CasaUITests.framework"
+            BlueprintName = "Pods-Como en CasaUITests"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -60,6 +60,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "6B18753F4E916C6297C7E0F43B003070"
+            BuildableName = "Pods_Como_en_CasaUITests.framework"
+            BlueprintName = "Pods-Como en CasaUITests"
+            ReferencedContainer = "container:Pods.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
