@@ -110,9 +110,9 @@ class navForMenu: UIView {
     func switchForText(){
         switch self.navFlag {
         case 0:
-            self.setLabelsText("", PTitle: "", Title: "Sopa", NTitle: "Entrada", dNTitle: "Guisado")
+            self.setLabelsText("", PTitle: "Perfil", Title: "Sopa", NTitle: "Entrada", dNTitle: "Guisado")
         case 1:
-            self.setLabelsText("", PTitle: "Sopa", Title: "Entrada", NTitle: "Guisado", dNTitle: "Bebida")
+            self.setLabelsText("Perfil", PTitle: "Sopa", Title: "Entrada", NTitle: "Guisado", dNTitle: "Bebida")
         case 2:
             self.setLabelsText("Sopa", PTitle: "Entrada", Title: "Guisado", NTitle: "Bebida", dNTitle: "Postre")
         case 3:
@@ -173,6 +173,8 @@ class navForMenu: UIView {
             self.switchForText()
             self.standardArrangmentOfItems()
             }
+        } else if navFlag == 0 {
+            
         }
     }
     

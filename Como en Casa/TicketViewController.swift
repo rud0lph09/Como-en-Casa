@@ -24,13 +24,13 @@ class TicketViewController: UIViewController, NAExpandableTableViewDelegate, NAE
         
         expandableTableController = NAExpandableTableController(dataSource: self, delegate: self)
         expandableTableController.exclusiveExpand = true
+        tb.delegate = expandableTableController
+        tb.dataSource = expandableTableController
         
         
     }
     
     override func viewDidAppear(animated: Bool) {
-        tb.delegate = expandableTableController
-        tb.dataSource = expandableTableController
     }
     
     func numberOfSectionsInExpandableTableView(tableView: UITableView) -> Int {

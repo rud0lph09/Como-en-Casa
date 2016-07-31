@@ -398,7 +398,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <segue destination="dSr-du-s5u" kind="show" id="3o3-oD-xL2"/>
+                        <segue destination="dSr-du-s5u" kind="show" identifier="ticket" id="3o3-oD-xL2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qlm-9m-UVt" userLabel="First Responder" sceneMemberID="firstResponder"/>

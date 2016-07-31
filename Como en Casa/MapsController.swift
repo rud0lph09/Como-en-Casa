@@ -76,8 +76,7 @@ class MapsController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
     }
     
     func takeOrder(sender: AnyObject){
-        var next = TicketViewController()
-        self.presentViewController(next, animated: true, completion: nil)
+        self.performSegueWithIdentifier("ticket", sender: nil)
     }
 }
 
