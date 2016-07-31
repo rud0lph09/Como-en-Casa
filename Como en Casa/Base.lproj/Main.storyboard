@@ -347,6 +347,9 @@
                                 <state key="normal" title="Pagar con tarjeta" image="tarjataIcon">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="creditCardPay:" destination="dSr-du-s5u" eventType="touchUpInside" id="e9A-Lj-jSD"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dld-3q-fjG">
                                 <rect key="frame" x="175" y="530" width="250" height="40"/>
@@ -436,6 +439,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="addCC" destination="f8A-0y-fTv" id="Bd8-KN-gb6"/>
                         <outlet property="logoutButton" destination="ddW-fI-7yd" id="kFc-Py-4KP"/>
                         <segue destination="QeA-np-Gcx" kind="show" identifier="return" id="CtK-em-eIP"/>
                     </connections>

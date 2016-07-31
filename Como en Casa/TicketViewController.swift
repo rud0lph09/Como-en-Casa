@@ -7,7 +7,10 @@
 //
 
 import UIKit
-import NAExpandableTableControllerorder.append(["soup_id": n.id, "soup_amount": "\(n.desiredAmmount)"])
+import NAExpandableTableController
+import Alamofire
+import SwiftyJSON
+
 
 enum foodSectionState {
     case Postre,Comida;
@@ -31,9 +34,30 @@ class TicketViewController: UIViewController, NAExpandableTableViewDelegate, NAE
         expandableTableController.exclusiveExpand = true
         tb.delegate = expandableTableController
         tb.dataSource = expandableTableController
-        
-        
+        //recoveryData()
     }
+    
+    
+    func recoveryData() {
+//        let orderWrap:[String: AnyObject] = NSUserDefaults.standardUserDefaults().valueForKey("lastOrder") as! [String: AnyObject]
+//        let order = (orderWrap["orders"] as! [[String:String]])
+//        
+//        var sopas = [[String:String]]()
+//        var entradas = [[String:String]]()
+//        var platosFuerte = [[String:String]]()
+//        var bebidas = [[String:String]]()
+//        var postres = [[String:String]]()
+//        
+//        for i in order {
+//            switch i[""] {
+//            case <#pattern#>:
+//                <#code#>
+//            default:
+//                <#code#>
+//            }
+//        }
+    }
+    
     
     override func viewDidAppear(animated: Bool) {
     }
@@ -49,13 +73,12 @@ class TicketViewController: UIViewController, NAExpandableTableViewDelegate, NAE
     
     func expandableTableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tb.dequeueReusableCellWithIdentifier("TicketDescriptionCell") as! TicketDescriptionCell
-        
-        if food == .Comida {
-            cell.setCell(2, description: comidaDescription[indexPath.row], price: 30)
-        }else if food == .Postre{
-            cell.setCell(1, description: postreDescription[indexPath.row], price: 30)
+        if indexPath.row == 0 {
+            cell.setCell(1, description: "Sopa Papa, Mole.", price: 30)
+        }else{
+            cell.setCell(1, description: "Arroz, Milanesa.", price: 30)
         }
-        print(indexPath.row)
+        
         return cell
     }
     
@@ -101,6 +124,15 @@ class TicketViewController: UIViewController, NAExpandableTableViewDelegate, NAE
             food = .Comida
         }else if section == 3{
             food = .Postre
+        }
+    }
+    
+    
+    @IBAction func creditCardPay(sender: UIButton) {
+        Alamofire.request(.POST, "fdasf.com",parameters: ["response":"succed"]).responseData { response in
+            let json = JSON(response.data!)
+            self.dismissViewControllerAnimated(true, completion: nil)
+            
         }
     }
     

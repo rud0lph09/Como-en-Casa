@@ -6,6 +6,9 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var logoutButton: UIButton!
     var OKbutton: UIButton!
     
+    @IBOutlet weak var addCC: UIButton!
+    
+    
     override func viewDidLoad() {
         
         super.viewDidLoad()
@@ -31,7 +34,7 @@ class ProfileViewController: UIViewController {
         //ADDING STUFF TO VIEW
         self.view.addSubview(userInfoInputView)
         self.view.addSubview(OKbutton)
-        
+        self.view.bringSubviewToFront(addCC)
         self.view.bringSubviewToFront(logoutButton)
     }
     
