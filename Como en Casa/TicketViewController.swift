@@ -21,6 +21,8 @@ class TicketViewController: UIViewController, NAExpandableTableViewDelegate, NAE
 
     @IBOutlet weak var tb: UITableView!
     
+    
+    
     let numberOfSections = 6
     let numberOfRowsInEachSection = [Int]()
     let expandableSectionIndices = [2,3]
@@ -128,11 +130,42 @@ class TicketViewController: UIViewController, NAExpandableTableViewDelegate, NAE
         }
     }
     
+    func animateNotif(){
+        let notif = UILabel(frame: CGRect(x: 0, y: 0, width: 250, height: 100))
+        notif.center = self.view.center
+        notif.backgroundColor = UIColor.blackColor()
+        notif.clipsToBounds = true
+        notif.layer.cornerRadius = 10
+        notif.textAlignment = .Center
+        notif.alpha = 0
+        notif.font = UIFont(name: "Avenir-Next", size: 35)
+        notif.textColor = UIColor.whiteColor()
+        notif.text = "Listo!"
+        
+        self.view.addSubview(notif)
+        
+        notif.transform = CGAffineTransformMakeScale(0.1, 0.1)
+        
+        UIView.animateWithDuration(0.2, animations: {
+            notif.alpha = 0.7
+            notif.transform = CGAffineTransformIdentity
+        })
+        
+        UIView.animateWithDuration(0.2, delay: 0.9, options: [], animations: {
+            notif.transform = CGAffineTransformMakeScale(0.1, 0.1)
+            notif.alpha = 0
+            }) { (finished) in
+                self.performSegueWithIdentifier("initialSegue", sender: self)
+        }
+    }
+    
     
     @IBAction func creditCardPay(sender: UIButton) {
-        Alamofire.request(.POST, "fdasf.com",parameters: ["response":"succed"]).responseData { response in
+        Alamofire.request(.POST, "https://comoencasaapp.herokuapp.com/addorder",parameters: ["response":"succed"]).responseData { response in
             let json = JSON(response.data!)
-            self.dismissViewControllerAnimated(true, completion: nil)
+            print(json.description)
+            
+            self.animateNotif()
             
         }
     }
