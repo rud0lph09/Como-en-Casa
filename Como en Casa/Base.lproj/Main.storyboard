@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -22,12 +22,20 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="6HI-xd-RRb">
-                                        <rect key="frame" x="188.5" y="60" width="223" height="33"/>
+                                        <rect key="frame" x="189" y="60" width="223" height="33"/>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nF4-iM-9GY">
+                                        <rect key="frame" x="200" y="408" width="200" height="40"/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="0.72733820921985815" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="Entrar">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.98431372549019602" green="0.64313725490196072" blue="0.078431372549019607" alpha="0.10000000000000001" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="6HI-xd-RRb" firstAttribute="top" secondItem="qyj-8I-rBt" secondAttribute="top" constant="60" id="GUg-dO-OLS"/>
+                                    <constraint firstItem="nF4-iM-9GY" firstAttribute="centerX" secondItem="qyj-8I-rBt" secondAttribute="centerX" id="yUP-9V-bcP"/>
                                     <constraint firstItem="6HI-xd-RRb" firstAttribute="centerX" secondItem="qyj-8I-rBt" secondAttribute="centerX" id="yvm-wC-a1c"/>
                                 </constraints>
                             </view>
@@ -83,6 +91,7 @@
                             <constraint firstItem="UtC-L4-FsN" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-70" id="0VB-0y-r1k"/>
                             <constraint firstItem="qyj-8I-rBt" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="8Ne-s3-5Sl"/>
                             <constraint firstAttribute="trailingMargin" secondItem="UtC-L4-FsN" secondAttribute="trailing" constant="60" id="8uP-KP-ZhS"/>
+                            <constraint firstItem="nF4-iM-9GY" firstAttribute="height" secondItem="qvg-Bx-DNZ" secondAttribute="height" id="93S-dq-hfv"/>
                             <constraint firstItem="VED-kf-eeW" firstAttribute="top" secondItem="UtC-L4-FsN" secondAttribute="bottom" constant="20" id="Klz-Sv-2wN"/>
                             <constraint firstAttribute="trailingMargin" secondItem="VED-kf-eeW" secondAttribute="trailing" constant="60" id="Llj-cX-IlL"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="qyj-8I-rBt" secondAttribute="bottom" id="Saz-ih-SaT"/>
@@ -91,7 +100,9 @@
                             <constraint firstAttribute="trailing" secondItem="qyj-8I-rBt" secondAttribute="trailing" id="cBM-BB-QHu"/>
                             <constraint firstItem="UtC-L4-FsN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dJ2-2a-lUS"/>
                             <constraint firstItem="qyj-8I-rBt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="dme-aq-41l"/>
+                            <constraint firstItem="nF4-iM-9GY" firstAttribute="width" secondItem="qvg-Bx-DNZ" secondAttribute="width" id="fmh-lb-l2e"/>
                             <constraint firstItem="qvg-Bx-DNZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jWM-ME-syc"/>
+                            <constraint firstItem="nF4-iM-9GY" firstAttribute="top" secondItem="qvg-Bx-DNZ" secondAttribute="bottom" constant="8" id="qFV-Kh-b3j"/>
                             <constraint firstItem="VED-kf-eeW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ytY-VQ-2Cn"/>
                             <constraint firstItem="UtC-L4-FsN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="60" id="z53-tB-yPB"/>
                         </constraints>
@@ -153,7 +164,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="TICKET" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Qc-Ec-mXc">
-                                                    <rect key="frame" x="228" y="25.5" width="63.5" height="26"/>
+                                                    <rect key="frame" x="228" y="26" width="64" height="26"/>
                                                     <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="19"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -173,25 +184,25 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="1000.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="foL-CO-9yn">
-                                                    <rect key="frame" x="452" y="18" width="52.5" height="19.5"/>
+                                                    <rect key="frame" x="452" y="18" width="53" height="20"/>
                                                     <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LqV-jN-9lg">
-                                                    <rect key="frame" x="439" y="18" width="8.5" height="19.5"/>
+                                                    <rect key="frame" x="439" y="18" width="9" height="20"/>
                                                     <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gCJ-9S-tLi">
-                                                    <rect key="frame" x="15" y="18" width="24.5" height="19.5"/>
+                                                    <rect key="frame" x="15" y="18" width="25" height="20"/>
                                                     <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Descripcion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Loz-zB-qQZ">
-                                                    <rect key="frame" x="58" y="18" width="76.5" height="19.5"/>
+                                                    <rect key="frame" x="58" y="18" width="77" height="20"/>
                                                     <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -222,25 +233,25 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c6j-q1-MCk">
-                                                    <rect key="frame" x="68" y="8.5" width="30.5" height="16.5"/>
+                                                    <rect key="frame" x="68" y="9" width="31" height="16"/>
                                                     <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="12"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="$" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="usP-I0-I9u">
-                                                    <rect key="frame" x="454" y="8" width="7" height="16.5"/>
+                                                    <rect key="frame" x="454" y="8" width="7" height="17"/>
                                                     <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="12"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TFW-za-URr">
-                                                    <rect key="frame" x="38" y="8" width="11" height="16.5"/>
+                                                    <rect key="frame" x="38" y="8" width="11" height="17"/>
                                                     <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="12"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="20.00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="svl-dq-pcA">
-                                                    <rect key="frame" x="466" y="8" width="31" height="16.5"/>
+                                                    <rect key="frame" x="466" y="8" width="31" height="17"/>
                                                     <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="12"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -272,19 +283,19 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="meO-pK-edq">
-                                                    <rect key="frame" x="295" y="29" width="9" height="19.5"/>
+                                                    <rect key="frame" x="295" y="29" width="9" height="20"/>
                                                     <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="1000.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YuZ-Wh-5Oh">
-                                                    <rect key="frame" x="309" y="28.5" width="54" height="19.5"/>
+                                                    <rect key="frame" x="309" y="29" width="54" height="19"/>
                                                     <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Total" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="haW-NM-EGY">
-                                                    <rect key="frame" x="244" y="29" width="31" height="19.5"/>
+                                                    <rect key="frame" x="244" y="29" width="31" height="20"/>
                                                     <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
