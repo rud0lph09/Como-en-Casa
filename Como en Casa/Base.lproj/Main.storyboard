@@ -79,7 +79,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <segue destination="AwK-kJ-Zcg" kind="show" id="M5N-03-waJ"/>
+                        <segue destination="AwK-kJ-Zcg" kind="presentation" identifier="mapConfirm" modalPresentationStyle="formSheet" id="M5N-03-waJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bey-Yg-dZc" userLabel="First Responder" sceneMemberID="firstResponder"/>

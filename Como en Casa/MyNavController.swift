@@ -22,6 +22,8 @@ class navForMenu: UIView {
     var nextButton: UIButton!
     var prevButton: UIButton!
     
+    var parent: FoodMenuController!
+    
     var navFlag = 0
     var navMax = 4
     
@@ -123,8 +125,13 @@ class navForMenu: UIView {
         }
     }
     
+    func callParent(parent: FoodMenuController){
+        self.parent = parent
+    }
+    
     func animNext(sender: AnyObject){
         if navFlag < navMax {
+            
             self.littleSquare.center.x = self.nextLabel.center.x
         UIView.animateWithDuration(0.3, animations: {
             if self.navFlag < self.navMax {
@@ -136,11 +143,16 @@ class navForMenu: UIView {
                 
             }
             }) { (finished) in
+                
                 self.navFlag += 1
+                self.parent.switchForMenus()
                 print(self.navFlag)
                 self.switchForText()
                 self.standardArrangmentOfItems()
             }
+        } else if navFlag == navMax {
+            
+            self.parent.performSegueWithIdentifier("mapConfirm", sender: nil)
         }
     }
     
@@ -156,6 +168,7 @@ class navForMenu: UIView {
             
         }) { (finished) in
             self.navFlag -= 1
+            self.parent.switchForMenus()
             print(self.navFlag)
             self.switchForText()
             self.standardArrangmentOfItems()
@@ -171,4 +184,71 @@ class navForMenu: UIView {
         self.dNextLabel.text = dNTitle
     }
     
+}
+
+class mapsNavController: UIView, UITextFieldDelegate {
+    
+    var searchBar: UITextField!
+    var searchButton: UIButton!
+    var searchLabel: UILabel!
+    var littleSquare: UILabel!
+    
+    var parent: MapsController!
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        self.frame = CGRect(x: 0, y: 0, width: frame.width, height: 65)
+        self.backgroundColor = FancyOrange
+        
+        self.littleSquare = UILabel(frame: CGRect(x: 0, y: self.frame.height - 5, width: 80, height: 5))
+        self.searchBar = UITextField(frame: CGRect(x: 10, y: 30, width: frame.width - 100, height: 30))
+        self.searchLabel = UILabel(frame: CGRect(x: self.searchBar.frame.width + 10, y: 28, width: 80, height: 35))
+        self.searchButton = UIButton(frame: CGRect(x: self.searchBar.frame.width + 5, y: 20, width: 85, height: 45))
+        self.littleSquare.frame.origin.x = self.searchLabel.frame.origin.x
+        
+        self.searchBar.borderStyle = .RoundedRect
+        self.searchBar.returnKeyType = .Search
+        self.searchBar.placeholder = "Calle, Código Postal, Ciudad"
+        
+        self.searchLabel.font = UIFont(name: "Helvetica-Bold", size: 16)
+        self.searchLabel.textColor = UIColor.whiteColor()
+        self.searchLabel.text = "Buscar"
+        self.searchLabel.textAlignment = .Center
+        
+        self.littleSquare.backgroundColor = UIColor.whiteColor()
+        self.searchButton.backgroundColor = UIColor.clearColor()
+        self.searchButton.addTarget(self, action: #selector(self.performSearch(_:)), forControlEvents: .TouchUpInside)
+        
+        self.searchBar.delegate = self
+        
+        self.addSubview(searchBar)
+        self.addSubview(searchButton)
+        self.addSubview(searchLabel)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+    
+    func callParent(parent: MapsController){
+        self.parent = parent
+    }
+    
+    func performSearch(sender: AnyObject){
+        self.parent.performSearch(self)
+        self.searchBar.resignFirstResponder()
+    }
+    
+    
+}
+
+extension mapsNavController {
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        if textField.returnKeyType == .Search {
+            self.performSearch(self)
+            return true
+        } else {
+            return true
+        }
+    }
 }

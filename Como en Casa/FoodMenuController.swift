@@ -54,9 +54,19 @@ class FoodMenuController: UIViewController {
         self.plusButton.frame = CGRect(x: 0, y: 0, width: 70, height: 70)
         self.minusButton.frame = self.plusButton.frame
         self.SoupsView = simpleMenuView(frame: CGRect(x: 0, y: 65, width: self.view.frame.width, height: (self.view.frame.height - 45)))
+        self.EntriesView = simpleMenuView(frame: self.SoupsView.frame)
+        self.DishesView = simpleMenuView(frame: self.SoupsView.frame)
+        self.DrinksView = simpleMenuView(frame: self.SoupsView.frame)
+        self.DessertView = simpleMenuView(frame: self.SoupsView.frame)
         self.navBar = navForMenu(frame: self.view.frame)
         
+        self.navBar.callParent(self)
+        
         self.SoupsView.setItems(Soups)
+        self.EntriesView.setItems(Entries)
+        self.DishesView.setItems(Dishes)
+        self.DrinksView.setItems(Drinks)
+        self.DessertView.setItems(Desserts)
         
         self.minusButton.center = CGPoint(x: (self.view.center.x - (65 + (self.minusButton.frame.width / 2))), y: (self.view.frame.height) - ((self.minusButton.frame.height / 2) + 20))
         self.plusButton.center = CGPoint(x: (self.view.center.x + (65 + (self.minusButton.frame.width / 2))), y:  (self.view.frame.height) - ((self.minusButton.frame.height / 2) + 20))
@@ -82,7 +92,10 @@ class FoodMenuController: UIViewController {
         
         self.minusButton.addTarget(self, action: #selector(self.minusItem(_:)), forControlEvents: .TouchUpInside)
         self.plusButton.addTarget(self, action: #selector(self.plusItem(_:)), forControlEvents: .TouchUpInside)
-        
+        self.view.addSubview(DessertView)
+        self.view.addSubview(DrinksView)
+        self.view.addSubview(DishesView)
+        self.view.addSubview(EntriesView)
         self.view.addSubview(SoupsView)
         self.view.addSubview(minusButton)
         self.view.addSubview(plusButton)
@@ -90,6 +103,31 @@ class FoodMenuController: UIViewController {
         
         self.AllSaucers = [Soups, Entries, Dishes, Drinks, Desserts]
         self.allDishViews = [SoupsView, EntriesView, DishesView, DrinksView, DessertView]
+    }
+    
+    func alwaysInFront(){
+        self.view.bringSubviewToFront(minusButton)
+        self.view.bringSubviewToFront(plusButton)
+        self.view.bringSubviewToFront(navBar)
+    }
+    
+    func switchForMenus(){
+        switch self.navBar.navFlag {
+        case 0:
+            self.view.bringSubviewToFront(SoupsView)
+        case 1:
+            self.view.bringSubviewToFront(EntriesView)
+        case 2:
+            self.view.bringSubviewToFront(DishesView)
+        case 3:
+            self.view.bringSubviewToFront(DrinksView)
+        case 4:
+            self.view.bringSubviewToFront(DessertView)
+        default:
+            print("Invalid Value")
+            
+        }
+        self.alwaysInFront()
     }
     
     
@@ -143,15 +181,49 @@ extension FoodMenuController{
                     
                     // Print out dictionary
                     
-                    for item in (convertedJsonIntoDict.valueForKey("dishes") as! [NSDictionary]) {
+                    for item in (convertedJsonIntoDict.valueForKey("soups") as! [NSDictionary]) {
                         let name: String = (item.valueForKey("name")!) as! String
                         let photo: String = (item.valueForKey("photo")!) as! String
                         let id: String = "\(item.valueForKey("id")!)"
                         let price: String = "\(item.valueForKey("price")!)"
 
-
-                    
                         self.Soups.append(Saucer(name: name, photoURL: photo, id: id, price: price, inStock: 10))
+                    }
+                    
+                    for item in (convertedJsonIntoDict.valueForKey("entries") as! [NSDictionary]) {
+                        let name: String = (item.valueForKey("name")!) as! String
+                        let photo: String = (item.valueForKey("photo")!) as! String
+                        let id: String = "\(item.valueForKey("id")!)"
+                        let price: String = "\(item.valueForKey("price")!)"
+                        
+                        self.Entries.append(Saucer(name: name, photoURL: photo, id: id, price: price, inStock: 10))
+                    }
+                    
+                    for item in (convertedJsonIntoDict.valueForKey("dishes") as! [NSDictionary]) {
+                        let name: String = (item.valueForKey("name")!) as! String
+                        let photo: String = (item.valueForKey("photo")!) as! String
+                        let id: String = "\(item.valueForKey("id")!)"
+                        let price: String = "\(item.valueForKey("price")!)"
+                        
+                        self.Dishes.append(Saucer(name: name, photoURL: photo, id: id, price: price, inStock: 10))
+                    }
+                    
+                    for item in (convertedJsonIntoDict.valueForKey("drinks") as! [NSDictionary]) {
+                        let name: String = (item.valueForKey("name")!) as! String
+                        let photo: String = (item.valueForKey("photo")!) as! String
+                        let id: String = "\(item.valueForKey("id")!)"
+                        let price: String = "\(item.valueForKey("price")!)"
+                        
+                        self.Drinks.append(Saucer(name: name, photoURL: photo, id: id, price: price, inStock: 10))
+                    }
+                    
+                    for item in (convertedJsonIntoDict.valueForKey("desserts") as! [NSDictionary]) {
+                        let name: String = (item.valueForKey("name")!) as! String
+                        let photo: String = (item.valueForKey("photo")!) as! String
+                        let id: String = "\(item.valueForKey("id")!)"
+                        let price: String = "\(item.valueForKey("price")!)"
+                        
+                        self.Desserts.append(Saucer(name: name, photoURL: photo, id: id, price: price, inStock: 10))
                     }
                     
                     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), {

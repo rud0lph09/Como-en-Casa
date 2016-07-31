@@ -119,12 +119,9 @@
 			children = (
 				DD9F22BC1D4C9107001DD2E5 /* AppDelegate.swift */,
 				DD9F22BE1D4C9107001DD2E5 /* LoginViewController.swift */,
-				DD9F22C01D4C9107001DD2E5 /* Main.storyboard */,
-				DD9F22ED1D4C94D1001DD2E5 /* FoodMenuController.swift */,
-				DD9F22F91D4D0F4F001DD2E5 /* MyConstants.swift */,
 				DD9F22FB1D4D1106001DD2E5 /* MyNavController.swift */,
-				DD9F22F71D4D074A001DD2E5 /* SimpleMenuView.swift */,
-				DD9F22FD1D4D3068001DD2E5 /* FoodView.swift */,
+				DD9F22C01D4C9107001DD2E5 /* Main.storyboard */,
+				DD9F23011D4DC7A2001DD2E5 /* FoodMenu */,
 				DD9F22F51D4CBF53001DD2E5 /* NetWorkFunctions.swift */,
 				DD9F22F31D4CBA92001DD2E5 /* Saucer.swift */,
 				DD9F22EF1D4C94F5001DD2E5 /* MapsController.swift */,
@@ -153,6 +150,17 @@
 				DD9F22E11D4C9107001DD2E5 /* Info.plist */,
 			);
 			path = "Como en CasaUITests";
+			sourceTree = "<group>";
+		};
+		DD9F23011D4DC7A2001DD2E5 /* FoodMenu */ = {
+			isa = PBXGroup;
+			children = (
+				DD9F22ED1D4C94D1001DD2E5 /* FoodMenuController.swift */,
+				DD9F22F91D4D0F4F001DD2E5 /* MyConstants.swift */,
+				DD9F22F71D4D074A001DD2E5 /* SimpleMenuView.swift */,
+				DD9F22FD1D4D3068001DD2E5 /* FoodView.swift */,
+			);
+			name = FoodMenu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
