@@ -4,12 +4,22 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Alamofire.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>NAExpandableTableController.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
 		<key>Pods-Como en Casa.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SwiftyJSON.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -22,7 +32,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F5B2435464109A1383083512192F9216</key>
+		<key>3A8676F4BD31BB633A23D4A4AA570039</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4AC1641726F8DF3B171EE5A157EC5CBF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>79C040AFDDCE1BCBF6D8B5EB0B85887F</key>
 		<dict>
 			<key>primary</key>
 			<true/>

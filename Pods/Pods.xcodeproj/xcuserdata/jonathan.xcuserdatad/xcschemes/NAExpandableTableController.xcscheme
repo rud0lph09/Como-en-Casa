@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '7AB0572BF80A8666092478EE'
+               BlueprintIdentifier = '43849CDD1AA4A44C68982AD9'
                BlueprintName = 'NAExpandableTableController'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'NAExpandableTableController.framework'>

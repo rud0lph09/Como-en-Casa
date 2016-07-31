@@ -84,8 +84,12 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "Pods-Como en Casa/Alamofire.framework"
   install_framework "Pods-Como en Casa/NAExpandableTableController.framework"
+  install_framework "Pods-Como en Casa/SwiftyJSON.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "Pods-Como en Casa/Alamofire.framework"
   install_framework "Pods-Como en Casa/NAExpandableTableController.framework"
+  install_framework "Pods-Como en Casa/SwiftyJSON.framework"
 fi
