@@ -14,6 +14,8 @@ class MapsController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
     var navBar: mapsNavController!
     var map: MKMapView!
     var locManager: CLLocationManager!
+    var takeOrderButton: UIButton!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +34,17 @@ class MapsController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         self.view.addSubview(navBar)
         self.navBar.callParent(self)
         self.navBarAppear()
+        
+        self.takeOrderButton = UIButton(frame: CGRect(x: 0, y: self.view.frame.height - 70, width: 250, height: 40))
+        self.takeOrderButton.center.x = self.view.center.x
+        self.takeOrderButton.clipsToBounds = true
+        self.takeOrderButton.layer.cornerRadius = 3
+        self.takeOrderButton.setTitle("Pedir", forState: .Normal)
+        self.takeOrderButton.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+        self.takeOrderButton.backgroundColor = FancyOrange
+        self.takeOrderButton.addTarget(self, action: #selector(self.takeOrder(_:)), forControlEvents: .TouchUpInside)
+        
+        self.view.addSubview(takeOrderButton)
         
     }
     
@@ -60,6 +73,11 @@ class MapsController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
                 self.addAnnotationForMap(item)
             }
         }
+    }
+    
+    func takeOrder(sender: AnyObject){
+        var next = TicketViewController()
+        self.presentViewController(next, animated: true, completion: nil)
     }
 }
 

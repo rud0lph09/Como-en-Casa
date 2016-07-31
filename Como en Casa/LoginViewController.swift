@@ -15,6 +15,12 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
     var player: AVPlayer?
     
     @IBOutlet weak var btnFB: FBSDKLoginButton!
+    @IBOutlet weak var btnNM: UIButton!
+    @IBOutlet weak var fieldA: UITextField!
+    @IBOutlet weak var fieldB: UITextField!
+    
+    var quitaELPUTOTECLADO: UITapGestureRecognizer!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,7 +28,16 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
         configVideo()
         btnFB.delegate = self
         
+        self.quitaELPUTOTECLADO = UITapGestureRecognizer(target: self, action: #selector(self.QUITAELPUTOTECLADO(_:)))
+        self.quitaELPUTOTECLADO.numberOfTapsRequired = 1
+        self.view.addGestureRecognizer(self.quitaELPUTOTECLADO)
+        
         FBSDKLoginManager().logOut()
+        self.view.bringSubviewToFront(btnFB)
+        self.view.bringSubviewToFront(fieldA)
+        self.view.bringSubviewToFront(fieldB)
+        
+        self.view.bringSubviewToFront(btnNM)
     }
     
     func configVideo(){
@@ -52,6 +67,7 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
         player?.seekToTime(kCMTimeZero)
         player?.play()
     }
+    
 
     func loginButtonDidLogOut(loginButton: FBSDKLoginButton!) {
         
@@ -68,7 +84,15 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
         }
     }
     
-
+    @IBAction func enter(sender: AnyObject?){
+        let nv = self.storyboard?.instantiateViewControllerWithIdentifier("FoodMenuController")
+        self.presentViewController(nv!, animated: true, completion: nil)
+    }
+    
+    func QUITAELPUTOTECLADO(sender: AnyObject){
+        self.view.endEditing(true)
+    }
+    
 
 }
 

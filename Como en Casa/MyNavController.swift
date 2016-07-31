@@ -193,6 +193,7 @@ class mapsNavController: UIView, UITextFieldDelegate {
     var searchLabel: UILabel!
     var littleSquare: UILabel!
     
+    
     var parent: MapsController!
     
     override init(frame: CGRect) {
@@ -206,18 +207,20 @@ class mapsNavController: UIView, UITextFieldDelegate {
         self.searchButton = UIButton(frame: CGRect(x: self.searchBar.frame.width + 5, y: 20, width: 85, height: 45))
         self.littleSquare.frame.origin.x = self.searchLabel.frame.origin.x
         
+        
+        
         self.searchBar.borderStyle = .RoundedRect
         self.searchBar.returnKeyType = .Search
         self.searchBar.placeholder = "Calle, Código Postal, Ciudad"
         
         self.searchLabel.font = UIFont(name: "Helvetica-Bold", size: 16)
         self.searchLabel.textColor = UIColor.whiteColor()
-        self.searchLabel.text = "Buscar"
+        self.searchLabel.text = "Cancelar"
         self.searchLabel.textAlignment = .Center
         
         self.littleSquare.backgroundColor = UIColor.whiteColor()
         self.searchButton.backgroundColor = UIColor.clearColor()
-        self.searchButton.addTarget(self, action: #selector(self.performSearch(_:)), forControlEvents: .TouchUpInside)
+        self.searchButton.addTarget(self, action: #selector(self.cancelTask(_:)), forControlEvents: .TouchUpInside)
         
         self.searchBar.delegate = self
         
@@ -237,6 +240,10 @@ class mapsNavController: UIView, UITextFieldDelegate {
     func performSearch(sender: AnyObject){
         self.parent.performSearch(self)
         self.searchBar.resignFirstResponder()
+    }
+    
+    func cancelTask(sender: AnyObject){
+        self.parent.presentViewController(FoodMenuController(), animated: true, completion: nil)
     }
     
     

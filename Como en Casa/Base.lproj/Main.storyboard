@@ -30,6 +30,9 @@
                                         <state key="normal" title="Entrar">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="enter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0uF-Ao-A02"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.98431372549019602" green="0.64313725490196072" blue="0.078431372549019607" alpha="0.10000000000000001" colorSpace="calibratedRGB"/>
@@ -109,6 +112,9 @@
                     </view>
                     <connections>
                         <outlet property="btnFB" destination="qvg-Bx-DNZ" id="XsL-dY-mXX"/>
+                        <outlet property="btnNM" destination="nF4-iM-9GY" id="utK-iU-IGl"/>
+                        <outlet property="fieldA" destination="UtC-L4-FsN" id="CSu-Q5-o1S"/>
+                        <outlet property="fieldB" destination="VED-kf-eeW" id="Bjo-KG-3MF"/>
                         <segue destination="QeA-np-Gcx" kind="show" id="Hdg-mt-MVw"/>
                     </connections>
                 </viewController>
@@ -128,7 +134,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="77" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6Nh-rh-OsE">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="77" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6Nh-rh-OsE">
                                 <rect key="frame" x="40" y="128" width="520" height="312"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -316,16 +322,19 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="gRT-rh-xhM">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="gRT-rh-xhM">
                                 <rect key="frame" x="189" y="35" width="223" height="33"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y0Q-PA-o3i">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y0Q-PA-o3i">
                                 <rect key="frame" x="20" y="35" width="25" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="Sck-Ly-coa"/>
                                     <constraint firstAttribute="width" constant="25" id="ima-dh-yFu"/>
                                 </constraints>
                                 <state key="normal" backgroundImage="Tache"/>
+                                <connections>
+                                    <segue destination="QeA-np-Gcx" kind="show" id="rIf-le-I1L"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="en3-j8-Nww">
                                 <rect key="frame" x="175" y="470" width="250" height="40"/>
@@ -423,4 +432,7 @@
         <image name="Tache" width="25" height="25"/>
         <image name="tarjataIcon" width="48" height="48"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="rIf-le-I1L"/>
+    </inferredMetricsTieBreakers>
 </document>
