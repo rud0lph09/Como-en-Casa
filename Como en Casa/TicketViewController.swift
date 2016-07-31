@@ -9,6 +9,9 @@
 import UIKit
 import NAExpandableTableController
 
+enum foodSectionState {
+    case Postre,Comida;
+}
 
 class TicketViewController: UIViewController, NAExpandableTableViewDelegate, NAExpandableTableViewDataSource{
 
@@ -17,6 +20,11 @@ class TicketViewController: UIViewController, NAExpandableTableViewDelegate, NAE
     let numberOfSections = 6
     let numberOfRowsInEachSection = [Int]()
     let expandableSectionIndices = [2,3]
+    var food:foodSectionState = .Comida
+    
+    
+    let comidaDescription = ["Caldo Tlalpeño","Mole"]
+    let postreDescription = ["Arroz con leche","Imposible"]
     
     var expandableTableController: NAExpandableTableController!
     
@@ -44,7 +52,12 @@ class TicketViewController: UIViewController, NAExpandableTableViewDelegate, NAE
     
     func expandableTableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tb.dequeueReusableCellWithIdentifier("TicketDescriptionCell") as! TicketDescriptionCell
-        cell.setCell(2, description: "Lorem ipsum", price: 40)
+        
+        if food == .Comida {
+            cell.setCell(2, description: comidaDescription[indexPath.row], price: 30)
+        }else if food == .Postre{
+            cell.setCell(1, description: postreDescription[indexPath.row], price: 30)
+        }
         print(indexPath.row)
         return cell
     }
@@ -86,6 +99,13 @@ class TicketViewController: UIViewController, NAExpandableTableViewDelegate, NAE
         return true
     }
     
+    func expandableTableView(tableView: UITableView, didSelectTitleCellInSection section: Int) {
+        if section == 2 {
+            food = .Comida
+        }else if section == 3{
+            food = .Postre
+        }
+    }
     
     
 }

@@ -423,6 +423,7 @@
                                 </state>
                                 <connections>
                                     <action selector="enter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Y9L-sk-lti"/>
+                                    <segue destination="imq-Jt-evt" kind="show" id="nhO-P3-uZg"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -490,6 +491,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="addCreditCard:" destination="imq-Jt-evt" eventType="touchUpInside" id="F4U-Vc-gzN"/>
                                     <action selector="nextView:" destination="imq-Jt-evt" eventType="touchUpInside" id="FYa-o2-gpf"/>
                                 </connections>
                             </button>
@@ -588,6 +590,6 @@
         <image name="tarjataIcon" width="48" height="48"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="CtK-em-eIP"/>
+        <segue reference="rIf-le-I1L"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -59,4 +59,9 @@ class AddCreditCard: UIViewController, CardIOPaymentViewControllerDelegate {
         paymentViewController?.dismissViewControllerAnimated(true, completion: nil)
     }
     
+    @IBAction func addCreditCard(sender: UIButton) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    
 }
