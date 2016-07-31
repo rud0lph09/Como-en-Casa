@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import NAExpandableTableController
+import NAExpandableTableControllerorder.append(["soup_id": n.id, "soup_amount": "\(n.desiredAmmount)"])
 
 enum foodSectionState {
     case Postre,Comida;
@@ -22,9 +22,6 @@ class TicketViewController: UIViewController, NAExpandableTableViewDelegate, NAE
     let expandableSectionIndices = [2,3]
     var food:foodSectionState = .Comida
     
-    
-    let comidaDescription = ["Caldo Tlalpeño","Mole"]
-    let postreDescription = ["Arroz con leche","Imposible"]
     
     var expandableTableController: NAExpandableTableController!
     

@@ -151,7 +151,7 @@ class navForMenu: UIView {
                 self.standardArrangmentOfItems()
             }
         } else if navFlag == navMax {
-            
+            self.parent.checkOrder()
             self.parent.performSegueWithIdentifier("mapConfirm", sender: nil)
         }
     }

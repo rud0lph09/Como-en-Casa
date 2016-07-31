@@ -17,14 +17,16 @@ class Saucer {
     var price: String!
     var desiredAmmount: Int = 0
     var abveilableAmmount: Int!
+    var type: Int!
     
-    init(name: String, photoURL: String, id: String, price: String, inStock: Int){
+    init(name: String, photoURL: String, id: String, price: String, inStock: Int, type: Int){
         self.name = name
         self.photoURL = photoURL
         self.id = id
         self.price = price
         self.abveilableAmmount = inStock
         self.photo = UIImageView()
+        self.type = type
     }
     
     func setDisiredAmmount(n: Int){

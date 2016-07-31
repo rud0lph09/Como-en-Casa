@@ -32,6 +32,8 @@ class FoodMenuController: UIViewController {
     var Drinks: [Saucer] = []
     var AllSaucers: [[Saucer]]!
     
+    
+    
     //VARIABLES AND HELPERS
     var initLoc: CGFloat = 0
     var itemFlag: Int = 0
@@ -130,7 +132,33 @@ class FoodMenuController: UIViewController {
         self.alwaysInFront()
     }
     
-    
+    func checkOrder(){
+        var order = [[String:String]]()
+        
+        for i in AllSaucers {
+            for n in i {
+                switch n.type {
+                case 0 :
+                    order.append(["soup_id": n.id, "soup_amount": "\(n.desiredAmmount)", "price": n.price, "name": n.name])
+                case 1:
+                    order.append(["entry_id": n.id, "entry_amount": "\(n.desiredAmmount)", "price": n.price, "name": n.name])
+                case 2:
+                    order.append(["dish_id": n.id, "dish_amount": "\(n.desiredAmmount)", "price": n.price, "name": n.name])
+                case 3:
+                    order.append(["drink_id": n.id, "drink_amount": "\(n.desiredAmmount)", "price": n.price, "name": n.name])
+                case 4:
+                    order.append(["dessert_id": n.id, "dessert_amount": "\(n.desiredAmmount)", "price": n.price, "name": n.name])
+                default:
+                    print("")
+                }
+            }
+        }
+        
+        var orderWrapUp: [String: AnyObject] = ["orders": order]
+        let uDef = NSUserDefaults.standardUserDefaults()
+        uDef.setObject(orderWrapUp, forKey: "lastOrder")
+        uDef.synchronize()
+    }
     
 }
 
@@ -187,7 +215,7 @@ extension FoodMenuController{
                         let id: String = "\(item.valueForKey("id")!)"
                         let price: String = "\(item.valueForKey("price")!)"
 
-                        self.Soups.append(Saucer(name: name, photoURL: photo, id: id, price: price, inStock: 10))
+                        self.Soups.append(Saucer(name: name, photoURL: photo, id: id, price: price, inStock: 10, type: 0))
                     }
                     
                     for item in (convertedJsonIntoDict.valueForKey("entries") as! [NSDictionary]) {
@@ -196,7 +224,7 @@ extension FoodMenuController{
                         let id: String = "\(item.valueForKey("id")!)"
                         let price: String = "\(item.valueForKey("price")!)"
                         
-                        self.Entries.append(Saucer(name: name, photoURL: photo, id: id, price: price, inStock: 10))
+                        self.Entries.append(Saucer(name: name, photoURL: photo, id: id, price: price, inStock: 10, type: 1))
                     }
                     
                     for item in (convertedJsonIntoDict.valueForKey("dishes") as! [NSDictionary]) {
@@ -205,7 +233,7 @@ extension FoodMenuController{
                         let id: String = "\(item.valueForKey("id")!)"
                         let price: String = "\(item.valueForKey("price")!)"
                         
-                        self.Dishes.append(Saucer(name: name, photoURL: photo, id: id, price: price, inStock: 10))
+                        self.Dishes.append(Saucer(name: name, photoURL: photo, id: id, price: price, inStock: 10, type: 2))
                     }
                     
                     for item in (convertedJsonIntoDict.valueForKey("drinks") as! [NSDictionary]) {
@@ -214,7 +242,7 @@ extension FoodMenuController{
                         let id: String = "\(item.valueForKey("id")!)"
                         let price: String = "\(item.valueForKey("price")!)"
                         
-                        self.Drinks.append(Saucer(name: name, photoURL: photo, id: id, price: price, inStock: 10))
+                        self.Drinks.append(Saucer(name: name, photoURL: photo, id: id, price: price, inStock: 10, type: 3))
                     }
                     
                     for item in (convertedJsonIntoDict.valueForKey("desserts") as! [NSDictionary]) {
@@ -223,7 +251,7 @@ extension FoodMenuController{
                         let id: String = "\(item.valueForKey("id")!)"
                         let price: String = "\(item.valueForKey("price")!)"
                         
-                        self.Desserts.append(Saucer(name: name, photoURL: photo, id: id, price: price, inStock: 10))
+                        self.Desserts.append(Saucer(name: name, photoURL: photo, id: id, price: price, inStock: 10, type: 4))
                     }
                     
                     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), {
