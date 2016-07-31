@@ -12,6 +12,7 @@
 		AB992E261D4D46F200A4B8E7 /* TicketSectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB992E251D4D46F200A4B8E7 /* TicketSectionCell.swift */; };
 		AB992E281D4D470D00A4B8E7 /* TicketDescriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB992E271D4D470D00A4B8E7 /* TicketDescriptionCell.swift */; };
 		AB992E2A1D4D47CA00A4B8E7 /* TicketTotalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB992E291D4D47CA00A4B8E7 /* TicketTotalCell.swift */; };
+		ABDDFBC31D4E00EF006C777C /* AddCreditCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDDFBC21D4E00EF006C777C /* AddCreditCard.swift */; };
 		ABE360601D4DE76B00CC85E9 /* FacebookSDKStrings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = ABE3605F1D4DE76B00CC85E9 /* FacebookSDKStrings.bundle */; };
 		ABE360621D4DE77500CC85E9 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABE360611D4DE77500CC85E9 /* FBSDKCoreKit.framework */; };
 		ABE360641D4DE77A00CC85E9 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABE360631D4DE77A00CC85E9 /* FBSDKLoginKit.framework */; };
@@ -60,6 +61,7 @@
 		AB992E251D4D46F200A4B8E7 /* TicketSectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketSectionCell.swift; sourceTree = "<group>"; };
 		AB992E271D4D470D00A4B8E7 /* TicketDescriptionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketDescriptionCell.swift; sourceTree = "<group>"; };
 		AB992E291D4D47CA00A4B8E7 /* TicketTotalCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketTotalCell.swift; sourceTree = "<group>"; };
+		ABDDFBC21D4E00EF006C777C /* AddCreditCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCreditCard.swift; sourceTree = "<group>"; };
 		ABE3605F1D4DE76B00CC85E9 /* FacebookSDKStrings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FacebookSDKStrings.bundle; sourceTree = "<group>"; };
 		ABE360611D4DE77500CC85E9 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		ABE360631D4DE77A00CC85E9 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
@@ -183,6 +185,7 @@
 				DD9F22BC1D4C9107001DD2E5 /* AppDelegate.swift */,
 				DD9F22BE1D4C9107001DD2E5 /* LoginViewController.swift */,
 				DD9F22FB1D4D1106001DD2E5 /* MyNavController.swift */,
+				ABDDFBC21D4E00EF006C777C /* AddCreditCard.swift */,
 				DD9F22C01D4C9107001DD2E5 /* Main.storyboard */,
 				DD9F23011D4DC7A2001DD2E5 /* FoodMenu */,
 				DD9F22F51D4CBF53001DD2E5 /* NetWorkFunctions.swift */,
@@ -301,6 +304,7 @@
 				TargetAttributes = {
 					DD9F22B81D4C9107001DD2E5 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = F3VV4SD4LV;
 					};
 					DD9F22CF1D4C9107001DD2E5 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -417,24 +421,20 @@
 				DD9F22FE1D4D3068001DD2E5 /* FoodView.swift in Sources */,
 				DD9F22FC1D4D1106001DD2E5 /* MyNavController.swift in Sources */,
 				DD9F22EE1D4C94D1001DD2E5 /* FoodMenuController.swift in Sources */,
-
 				ABE3606D1D4DE94D00CC85E9 /* CustomTextField.swift in Sources */,
-
 				DD9F22FA1D4D0F4F001DD2E5 /* MyConstants.swift in Sources */,
-
 				DD9F22BF1D4C9107001DD2E5 /* LoginViewController.swift in Sources */,
 				DD9F22F21D4C951F001DD2E5 /* TicketViewController.swift in Sources */,
 				AB992E261D4D46F200A4B8E7 /* TicketSectionCell.swift in Sources */,
 				DD9F22C51D4C9107001DD2E5 /* Como_en_Casa.xcdatamodeld in Sources */,
 				DD9F22F61D4CBF53001DD2E5 /* NetWorkFunctions.swift in Sources */,
+				ABDDFBC31D4E00EF006C777C /* AddCreditCard.swift in Sources */,
 				DD9F22F41D4CBA92001DD2E5 /* Saucer.swift in Sources */,
 				DD9F22BD1D4C9107001DD2E5 /* AppDelegate.swift in Sources */,
 				DD9F22F01D4C94F5001DD2E5 /* MapsController.swift in Sources */,
-
 				AB992E281D4D470D00A4B8E7 /* TicketDescriptionCell.swift in Sources */,
 				AB992E2A1D4D47CA00A4B8E7 /* TicketTotalCell.swift in Sources */,
 				AB992E241D4D464B00A4B8E7 /* TicketBorderCell.swift in Sources */,
-
 				DD9F22F81D4D074A001DD2E5 /* SimpleMenuView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -579,6 +579,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -587,6 +589,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.mariachi.Como-en-Casa";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Como en Casa/Como en Casa-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -598,6 +601,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -606,6 +611,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.mariachi.Como-en-Casa";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Como en Casa/Como en Casa-Bridging-Header.h";
 			};
 			name = Release;
