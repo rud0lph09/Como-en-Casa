@@ -18,6 +18,7 @@
                BuildableName = "Pods_Como_en_CasaTests.framework"
                BlueprintName = "Pods-Como en CasaTests"
                ReferencedContainer = "container:Pods.xcodeproj">
+
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

@@ -5,6 +5,9 @@
 
 target 'Como en Casa' do
 	pod 'NAExpandableTableController'
+	pod 'Alamofire', '~> 3.4'
+	pod 'SwiftyJSON'
+	pod 'CardIO'
 end
 
 target 'Como en CasaTests' do

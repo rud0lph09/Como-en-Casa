@@ -443,6 +443,100 @@
             </objects>
             <point key="canvasLocation" x="837" y="-454"/>
         </scene>
+        <!--Add Credit Card-->
+        <scene sceneID="92m-Vh-ula">
+            <objects>
+                <viewController id="imq-Jt-evt" customClass="AddCreditCard" customModule="Como_en_Casa" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tBQ-aD-NDD"/>
+                        <viewControllerLayoutGuide type="bottom" id="Z6g-Xc-lci"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="N1i-Cp-ptt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CreditCard" translatesAutoresizingMaskIntoConstraints="NO" id="5qv-wf-7Wy">
+                                <rect key="frame" x="36" y="80" width="303" height="185"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="5qv-wf-7Wy" secondAttribute="height" multiplier="303:185" id="32G-CK-gbn"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y7X-nd-s0F">
+                                <rect key="frame" x="209" y="213" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iMR-qe-jL8">
+                                <rect key="frame" x="100" y="233" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="XXXX" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LPv-Qz-sgG">
+                                <rect key="frame" x="71" y="179" width="241" height="21"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mvs-73-V1M">
+                                <rect key="frame" x="62" y="594" width="250" height="40"/>
+                                <color key="backgroundColor" red="0.41568627450980389" green="0.80784313725490198" blue="0.11764705882352941" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="2qc-4f-c0c"/>
+                                    <constraint firstAttribute="width" constant="250" id="gmb-Ox-La0"/>
+                                </constraints>
+                                <state key="normal" title="Agregar">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextView:" destination="imq-Jt-evt" eventType="touchUpInside" id="FYa-o2-gpf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BXs-5z-5j9">
+                                <rect key="frame" x="62" y="530" width="250" height="40"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="R2h-MV-Uco"/>
+                                    <constraint firstAttribute="width" constant="250" id="fgS-h0-3gq"/>
+                                </constraints>
+                                <state key="normal" title="Escanear">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextView:" destination="imq-Jt-evt" eventType="touchUpInside" id="RBb-pf-Kgr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98431372549019602" green="0.64313725490196072" blue="0.078431372549019607" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="LPv-Qz-sgG" firstAttribute="top" secondItem="5qv-wf-7Wy" secondAttribute="top" constant="99" id="5Za-v5-T74"/>
+                            <constraint firstItem="Z6g-Xc-lci" firstAttribute="top" secondItem="Mvs-73-V1M" secondAttribute="bottom" constant="33" id="6Ab-Ca-yC6"/>
+                            <constraint firstItem="iMR-qe-jL8" firstAttribute="leading" secondItem="5qv-wf-7Wy" secondAttribute="leading" constant="26" id="AD1-U8-TWG"/>
+                            <constraint firstItem="LPv-Qz-sgG" firstAttribute="trailing" secondItem="5qv-wf-7Wy" secondAttribute="trailing" constant="-27" id="BGE-nL-ue4"/>
+                            <constraint firstItem="5qv-wf-7Wy" firstAttribute="leading" secondItem="N1i-Cp-ptt" secondAttribute="leadingMargin" constant="20" id="LBF-zM-oox"/>
+                            <constraint firstItem="Mvs-73-V1M" firstAttribute="centerX" secondItem="N1i-Cp-ptt" secondAttribute="centerX" id="Wfc-wS-5XN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5qv-wf-7Wy" secondAttribute="trailing" constant="20" id="cvq-P2-14j"/>
+                            <constraint firstItem="LPv-Qz-sgG" firstAttribute="leading" secondItem="5qv-wf-7Wy" secondAttribute="leading" constant="35" id="dML-m4-2kz"/>
+                            <constraint firstItem="Y7X-nd-s0F" firstAttribute="leading" secondItem="5qv-wf-7Wy" secondAttribute="leading" constant="135" id="hv7-S9-7x7"/>
+                            <constraint firstItem="Mvs-73-V1M" firstAttribute="top" secondItem="BXs-5z-5j9" secondAttribute="bottom" constant="24" id="kBI-yQ-cxS"/>
+                            <constraint firstItem="iMR-qe-jL8" firstAttribute="bottom" secondItem="5qv-wf-7Wy" secondAttribute="bottom" constant="-11" id="kBM-fC-yTO"/>
+                            <constraint firstItem="5qv-wf-7Wy" firstAttribute="top" secondItem="tBQ-aD-NDD" secondAttribute="bottom" constant="60" id="pqv-5n-ihZ"/>
+                            <constraint firstItem="BXs-5z-5j9" firstAttribute="centerX" secondItem="N1i-Cp-ptt" secondAttribute="centerX" id="qJ3-EQ-Wj7"/>
+                            <constraint firstItem="Y7X-nd-s0F" firstAttribute="top" secondItem="LPv-Qz-sgG" secondAttribute="bottom" constant="13" id="vra-do-TEQ"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="creditCardNumber" destination="LPv-Qz-sgG" id="2eK-6q-TmH"/>
+                        <outlet property="expLabel" destination="Y7X-nd-s0F" id="ZKu-rF-KBO"/>
+                        <outlet property="nameLabel" destination="iMR-qe-jL8" id="otg-iV-jFw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qre-Qt-e9P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1437.5" y="-420.5"/>
+        </scene>
         <!--Maps Controller-->
         <scene sceneID="5jd-IO-XHb">
             <objects>
@@ -488,6 +582,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="CreditCard" width="855" height="541"/>
         <image name="Logo" width="223" height="33"/>
         <image name="Tache" width="25" height="25"/>
         <image name="tarjataIcon" width="48" height="48"/>
