@@ -85,7 +85,7 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
     }
     
     @IBAction func enter(sender: AnyObject?){
-        let nv = self.storyboard?.instantiateViewControllerWithIdentifier("FoodMenuController")
+        let nv = self.storyboard?.instantiateViewControllerWithIdentifier("HomeNavigation")
         self.presentViewController(nv!, animated: true, completion: nil)
     }
     

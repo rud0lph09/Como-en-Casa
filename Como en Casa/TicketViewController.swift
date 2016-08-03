@@ -155,7 +155,7 @@ class TicketViewController: UIViewController, NAExpandableTableViewDelegate, NAE
             notif.transform = CGAffineTransformMakeScale(0.1, 0.1)
             notif.alpha = 0
             }) { (finished) in
-                self.performSegueWithIdentifier("initialSegue", sender: self)
+                self.navigationController?.popToRootViewControllerAnimated(true)
         }
     }
     
@@ -170,5 +170,8 @@ class TicketViewController: UIViewController, NAExpandableTableViewDelegate, NAE
         }
     }
     
+    @IBAction func cancelOrder(sender: UIButton) {
+        self.navigationController?.popToRootViewControllerAnimated(true)
+    }
     
 }

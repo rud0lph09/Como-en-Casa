@@ -41,6 +41,9 @@ class FoodMenuController: UIViewController {
     var itemFlag: Int = 0
     
     override func viewDidLoad() {
+        
+        self.navigationController?.navigationBar.hidden = true
+        
         super.viewDidLoad()
         self.circle = UILabel(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
         self.circle.clipsToBounds = true

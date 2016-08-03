@@ -39,10 +39,14 @@ class ProfileViewController: UIViewController {
     }
     
     func getBack(sender: AnyObject){
-        self.performSegueWithIdentifier("return", sender: nil)
+        self.navigationController?.popToRootViewControllerAnimated(true)
     }
 
     
+    @IBAction func logOut(sender: UIButton) {
+        let nview = self.storyboard?.instantiateViewControllerWithIdentifier("LoginViewController")
+        UIApplication.sharedApplication().keyWindow?.rootViewController = nview
+    }
     
 }
 
